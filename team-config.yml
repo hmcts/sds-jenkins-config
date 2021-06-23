@@ -1,0 +1,627 @@
+aac:
+  team: "CDM"
+  namespace:  "aac"
+  slack:
+    contact_channel: "#ccd-questions-answers"
+    build_notices_channel: "#ccd-master-builds"
+  tags:
+    application: core-case-data
+cpo:
+  team: "CDM"
+  namespace:  "cpo"
+  slack:
+    contact_channel: "#ccd_support"
+    build_notices_channel: "#ccd-master-builds"
+  tags:
+    application: core-case-data
+hmc:
+  team: "CDM"
+  namespace:  "hmc"
+  slack:
+    contact_channel: "#ccd_support"
+    build_notices_channel: "#ccd-master-builds"
+  tags:
+    application: core-case-data
+ccd:
+  team: "CCD"
+  namespace:  "ccd"
+  slack:
+    contact_channel: "#ccd-questions-answers"
+    build_notices_channel: "#ccd-master-builds"
+  tags:
+    application: core-case-data
+ccdprobate:
+  team: "CCD"
+  namespace: "ccd"
+  slack:
+    contact_channel: "#devops"
+    build_notices_channel: "#ccd-devops"
+  tags:
+    application: core-case-data
+ccdcmc:
+  team: "CCD"
+  namespace: "ccd"
+  slack:
+    contact_channel: "#devops"
+    build_notices_channel: "#ccd-devops"
+  tags:
+    application: core-case-data
+ccddivorce:
+  team: "CCD"
+  namespace: "ccd"
+  slack:
+    contact_channel: "#devops"
+    build_notices_channel: "#ccd-devops"
+  tags:
+    application: core-case-data
+ccdsscs:
+  team: "CCD"
+  namespace: "ccd"
+  slack:
+    contact_channel: "#devops"
+    build_notices_channel: "#ccd-devops"
+  tags:
+    application: core-case-data
+ccdethos:
+  team: "CCD"
+  namespace: "ccd"
+  slack:
+    contact_channel: "#devops"
+    build_notices_channel: "#ccd-devops"
+  tags:
+    application: core-case-data
+sweeper:
+  team: "CCD"
+  namespace: "ccd"
+  slack:
+    contact_channel: "#devops"
+    build_notices_channel: "#ccd-devops"
+  tags:
+    application: core-case-data
+cmc:
+  team:  "Money Claims"
+  namespace:  "money-claims"
+  slack:
+    contact_channel: "#cmc-tech"
+    build_notices_channel: "#cmc-tech-notification"
+  tags:
+    application: civil-money-claims
+custard:
+  team: "CNP"
+  namespace:  "cnp"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+cet:
+  team: "Civil Enforcement"
+  namespace: "civil-enforcement"
+  slack:
+    contact_channel: "#cet-pipeline"
+    build_notices_channel: "#cet-pipeline"
+  tags:
+    application: civil-enforcement
+div:
+  team: "Divorce"
+  namespace: "divorce"
+  slack:
+    contact_channel: "#div-dev"
+    build_notices_channel: "#div-dev"
+  tags:
+    application: divorce
+dm:
+  team: "Evidence Management"
+  namespace: "dm-store"
+  slack:
+    contact_channel: "#em-dev-chat"
+    build_notices_channel: "#em-dev-chat"
+  tags:
+    application: evidence-management
+em:
+  team: "Evidence Management"
+  namespace: "em"
+  slack:
+    contact_channel: "#em-dev-chat"
+    build_notices_channel: "#em-dev-chat"
+  tags:
+    application: evidence-management
+dg:
+  team: "Evidence Management"
+  namespace: "dg"
+  slack:
+    contact_channel: "#em-dev-chat"
+    build_notices_channel: "#em-dev-chat"
+  tags:
+    application: evidence-management
+finrem:
+  team: "Financial Remedy"
+  namespace: "financial-remedy"
+  slack:
+    contact_channel: "#finrem-dev"
+    build_notices_channel: "#finrem-dev"
+  tags:
+    application: financial-remedy
+ia:
+  team: "Immigration"
+  namespace: "ia"
+  slack:
+    contact_channel: "#ia-tech"
+    build_notices_channel: "#ia-tech"
+  tags:
+    application: immigration
+idam:
+  team: "IdAM"
+  namespace: "idam"
+  slack:
+    contact_channel: "#idam_tech"
+    build_notices_channel: "#idam_tech"
+  tags:
+    application: idam
+# Shared with Idam and platform engineering
+core-compute:
+  team: "CNP"
+  namespace: "cnp"
+  slack:
+    contact_channel: "#platops-help, #idam_tech"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+fees:
+  team: "Fees/Pay"
+  namespace: "fees-pay"
+  slack:
+    contact_channel: "#cc-payments"
+    build_notices_channel: "#cc-payments-tech"
+  tags:
+    application: fees-pay
+fees-register:
+  team: "Fees/Pay"
+  namespace: "fees-pay"
+  slack:
+    contact_channel: "#cc-payments"
+    build_notices_channel: "#cc-payments-tech"
+  tags:
+    application: fees-pay
+payment:
+  team: "Fees/Pay"
+  namespace: "fees-pay"
+  slack:
+    contact_channel: "#cc-payments"
+    build_notices_channel: "#cc-payments-tech"
+  tags:
+    application: fees-pay
+ccpay:
+  team: "Fees/Pay"
+  namespace: "fees-pay"
+  slack:
+    contact_channel: "#cc-payments"
+    build_notices_channel: "#cc-payments-tech"
+  tags:
+    application: fees-pay
+bar:
+  team: "Fees/Pay"
+  namespace: "bar"
+  slack:
+    contact_channel: "#cc-payments"
+    build_notices_channel: "#bar-tech"
+  defaultSlackChannel: "#bar-tech"
+  tags:
+    application: fees-pay
+probate:
+  team: "Probate"
+  namespace: "probate"
+  slack:
+    contact_channel: "#probate"
+    build_notices_channel: "#probate-jenkins"
+  tags:
+    application: probate
+probatemandb:
+  team: "Probate"
+  namespace: "probate"
+  slack:
+    contact_channel: "#probate"
+    build_notices_channel: "#probate-jenkins"
+  tags:
+    application: probate
+bulk-scan:
+  team: "Bulk Scanning and Printing"
+  namespace: "bsp"
+  slack:
+    contact_channel: "#rbs"
+    build_notices_channel: "#bsp-build-notices"
+  tags:
+    application: bulk-scan-print
+reform-scan: # separate `bulk-scan` product copy since #349
+  team: "Bulk Scanning and Printing"
+  namespace: "reform-scan"
+  slack:
+    contact_channel: "#rbs"
+    build_notices_channel: "#bsp-build-notices"
+  tags:
+    application: bulk-scan-print
+bulk-scan-v2:
+  team: "Bulk Scanning and Printing"
+  namespace: "bsp"
+  slack:
+    contact_channel: "#rbs"
+    build_notices_channel: "#bsp-build-notices"
+  tags:
+    application: bulk-scan-print
+reform-scan-v2: # separate `bulk-scan` product copy since #349
+  team: "Bulk Scanning and Printing"
+  namespace: "reform-scan"
+  slack:
+    contact_channel: "#rbs"
+    build_notices_channel: "#bsp-build-notices"
+  tags:
+    application: bulk-scan-print
+rpe:
+  team: "Software Engineering"
+  namespace: "rpe"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+rpetemplate:
+  team: "Software Engineering"
+  namespace: "rpe"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+core-infra:
+  team: "Software Engineering"
+  namespace: "rpe"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+draft-store:
+  team: "Software Engineering"
+  namespace: "rpe"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+jui:
+  team: "Professional Applications"
+  namespace: "professional-applications"
+  slack:
+    contact_channel: "#jui-pipeline"
+    build_notices_channel: "#jui-pipeline"
+  tags:
+    application: professional-applications
+pui:
+  team: "Professional Applications"
+  namespace: "professional-applications"
+  slack:
+    contact_channel: "#pui-pipeline"
+    build_notices_channel: "#pui-pipeline"
+  tags:
+    application: professional-applications
+xui:
+  team: "Expert UI"
+  namespace: "xui"
+  slack:
+    contact_channel: "#xui-pipeline"
+    build_notices_channel: "#xui-pipeline"
+  tags:
+    application: expert-ui
+coh:
+  team: "Evidence Management"
+  namespace: "coh"
+  slack:
+    contact_channel: "#coh-pipeline"
+    build_notices_channel: "#coh-pipeline"
+  tags:
+    application: evidence-management
+rpa:
+  team: "Professional Applications"
+  namespace: "professional-applications"
+  slack:
+    contact_channel: "#rpa-pipeline"
+    build_notices_channel: "#rpa-pipeline"
+  tags:
+    application: professional-applications
+rpx:
+  team: "Professional Applications"
+  namespace: "professional-applications"
+  slack:
+    contact_channel: "#xui-pipeline"
+    build_notices_channel: "#xui-pipeline"
+  tags:
+    application: professional-applications
+ref:
+  team: "Professional Applications"
+  namespace: "professional-applications"
+  slack:
+    contact_channel: ""
+    build_notices_channel: ""
+  tags:
+    application: professional-applications
+rhubarb:
+  team: "CNP"
+  namespace: "cnp"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+rhubarb-shared-infrastructure:
+  team: "CNP"
+  namespace: "cnp"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+plum:
+  team: "CNP"
+  namespace: "cnp"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+crumble:
+  team: "CNP"
+  namespace: "cnp"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+plum-shared-infrastructure:
+  team: "CNP"
+  namespace: "cnp"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+sscs:
+  team: "SSCS"
+  namespace: "sscs"
+  slack:
+    contact_channel: "#sscs-tech"
+    build_notices_channel: "#sscs-tech"
+  tags:
+    application: social-service-child-support
+sscs-cor:
+  team: "SSCS"
+  namespace: "sscs"
+  slack:
+    contact_channel: "#sscs-tech"
+    build_notices_channel: "#sscs-tech"
+  tags:
+    application: social-service-child-support
+sscs-tya:
+  team: "SSCS"
+  namespace: "sscs"
+  slack:
+    contact_channel: "#sscs-tech"
+    build_notices_channel: "#sscs-tech"
+  tags:
+    application: social-service-child-support
+sscs-tribunals:
+  team: "SSCS"
+  namespace: "sscs"
+  slack:
+    contact_channel: "#sscs-tech"
+    build_notices_channel: "#sscs-tech"
+  tags:
+    application: social-service-child-support
+snl:
+  team: "SnL"
+  namespace: "snl"
+  slack:
+    contact_channel: "#snl-master-builds"
+    build_notices_channel: "#snl-master-builds"
+  tags:
+    application: scheduling-and-listing
+am:
+  team: "AM"
+  namespace: "am"
+  slack:
+    contact_channel: "#am-master-builds"
+    build_notices_channel: "#am-master-builds"
+  tags:
+    application: access-management
+fpl:
+  team: "Family Public Law"
+  namespace: "family-public-law"
+  slack:
+    contact_channel: "#fpla-tech"
+    build_notices_channel: "#fpla-tech"
+  tags:
+    application: family-public-law
+fprl:
+  team: "Family Private Law"
+  namespace: "family-private-law"
+  slack:
+    contact_channel: "#fprl-tech"
+    build_notices_channel: "#fprl-tech"
+  tags:
+    application: family-private-law
+ctsc:
+  team: "CTSC"
+  namespace: "ctsc"
+  slack:
+    contact_channel: "#ctsc-master-builds"
+    build_notices_channel: "#ctsc-master-builds"
+  tags:
+    application: courts-tribunals-service-centre
+rd:
+  team: "Reference Data"
+  namespace: "rd"
+  slack:
+    contact_channel: "#ref-data-support"
+    build_notices_channel: "#rd-master-builds"
+  tags:
+    application: reference-data
+data-extractor:
+  team: "Software Engineering"
+  namespace: "rpe"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: management-information
+data-generator:
+  team: "Software Engineering"
+  namespace: "rpe"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: management-information
+camunda:
+  team: "Software Engineering"
+  namespace: "camunda"
+  registry: "hmctsprivate"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: camunda
+ethos:
+  team: "Ethos Replacement"
+  namespace: "ethos"
+  slack:
+    contact_channel: "#ethos-repl-manchester"
+    build_notices_channel: "#ethos-repl-service"
+  tags:
+    application: ethos
+azdnspoc:
+  team: "DevOps"
+  namespace: "azdnspoc"
+  slack:
+    contact_channel: "#azdnspoc-notices"
+    build_notices_channel: "#azdnspoc-notices"
+  tags:
+    application: core
+payments:
+  team: "Fees/Pay"
+  namespace: "fees-pay"
+  slack:
+    contact_channel: "#cc-payments-tech"
+    build_notices_channel: "#cc-payments-tech"
+  tags:
+    application: fees-pay
+mi:
+  team: "Management Information"
+  namespace: "mi"
+  slack:
+    contact_channel: "#mi-data-platform"
+    build_notices_channel: "#mi-dev"
+  tags:
+    application: management-information
+pcq:
+  team: "PCQ"
+  namespace: "pcq"
+  slack:
+    contact_channel: "#pcq-dev"
+    build_notices_channel: "#pcq-builds"
+  tags:
+    application: protected-characteristics-questionnaire
+adoption:
+  team: "Adoption"
+  namespace: "adoption"
+  slack:
+    contact_channel: "#fpla_adoption_tech"
+    build_notices_channel: "#fpla_adoption_tech"
+  tags:
+    application: adoption
+ccpay-functions:
+  team: "Fees/Pay"
+  namespace: "fees-pay"
+  slack:
+    contact_channel: "#cc-payments-tech"
+    build_notices_channel: "#cc-payments-tech"
+  tags:
+    application: fees-pay
+rse:
+  team: "Reform Software Engineering"
+  namespace: "rse"
+  slack:
+    contact_channel: "#reform-swe"
+    build_notices_channel: "#reform-swe-builds"
+  tags:
+    application: core
+civil:
+  team: "Civil"
+  namespace: "civil"
+  slack:
+    contact_channel: "#civil_contact"
+    build_notices_channel: "#civil_notifications"
+  tags:
+    application: civil
+hmi:
+  team: "Future hearings - HMI"
+  namespace: "hmi"
+  slack:
+    contact_channel: "#hmi-devs"
+    build_notices_channel: "#hmi-build-notices"
+  tags:
+    application: hearing-management-interface
+wa:
+  team: "Work Allocation"
+  namespace: "wa"
+  slack:
+    contact_channel: "#wa-tech"
+    build_notices_channel: "#wa-tech"
+  tags:
+    application: work-allocation
+fact:
+  team: "Find a Court or Tribunal"
+  namespace: "fact"
+  slack:
+    contact_channel: "#fact-tech"
+    build_notices_channel: "#fact-builds"
+  tags:
+    application: find-a-court-or-tribunal
+nfdiv:
+  team: "No Fault Divorce"
+  namespace: "nfdiv"
+  slack:
+    contact_channel: "#nfdiv-tech"
+    build_notices_channel: "#nfdiv-builds"
+  tags:
+    application: no-fault-divorce
+ccd-elastic-search:
+  team: "CCD"
+  namespace:  "ccd"
+  slack:
+    contact_channel: "#ccd-questions-answers"
+    build_notices_channel: "#ccd-master-builds"
+  tags:
+    application: core-case-data
+paymentsgw:
+  team: "Fees/Pay"
+  namespace: "fees-pay"
+  slack:
+    contact_channel: "#cc-payments-tech"
+    build_notices_channel: "#cc-payments-tech"
+  tags:
+    application: fees-pay
+keda:
+  team: "CNP"
+  namespace: "admin"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+vh:
+  team: "Video Hearings"
+  namespace: "vh"
+  slack:
+    contact_channel: "#vh-devops"
+    build_notices_channel: "#vh-builds"
+  tags:
+    application: vh

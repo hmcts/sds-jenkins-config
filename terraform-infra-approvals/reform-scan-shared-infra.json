@@ -1,0 +1,15 @@
+{
+  "resources": [
+    {"type": "azurerm_subnet_network_security_group_association"},
+    {"type": "azurerm_network_security_group"},
+    {"type": "azurerm_frontdoor"},
+    {"type": "azurerm_frontdoor_firewall_policy"},
+    {"type": "azurerm_private_endpoint"},
+    {"type": "azurerm_frontdoor_custom_https_configuration"} 
+  ],
+  "module_calls": [
+    {"source":  "git@github.com:hmcts/cnp-module-palo-alto?ref=add-pdf-threat-exclusion"},
+    {"source":  "git@github.com:hmcts/cnp-module-waf?ref=add-exclusion-rule"},
+    {"source":  "git@github.com:hmcts/create-storage-containers?ref=master"}
+  ]
+}
