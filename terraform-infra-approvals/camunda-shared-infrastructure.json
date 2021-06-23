@@ -1,6 +1,0 @@
-{
-  "resources": [],
-  "module_calls": [
-    {"source":  "git@github.com:hmcts/cnp-module-elk.git?ref=7.11.1"}
-  ]
-}

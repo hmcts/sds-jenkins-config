@@ -8,35 +8,7 @@ private boolean isSandbox() {
 }
 
 List<Map> orgs = [
-        [name: 'Adoption'],
-        [name: 'AM'],
-        [name: 'BSP', regex: '(send-letter-client|send-letter-service|send-letter-performance-tests|send-letter-service-container-.*|bulk-scan-.*|blob-router-service|reform-scan-.*)'],
-        [name: 'CDM', regex: '(ccd.*|aac.*|cpo.*|hmc.*)'],
-        [name: 'CMC'],
-        [name: 'CNP'],
-        [name: 'CTSC'],
-        [name: 'DIV', displayName: "Divorce"],
-        [name: 'ECM', displayName: "ECM", regex: '(ethos.*|ecm.*)', credentialId: 'hmcts-jenkins-ethos'],
-        [name: 'EM',displayName: 'Evidence Management', regex: '(document-management-store-app|dm-shared-infrastructure|em-.*|dg-.*)'],
-        [name: 'FeePay', displayName: 'Fees and Pay', regex: '(ccfr.*|ccpay.*|bar.*)'],
-        [name: 'FinRem', displayName: "Financial Remedy"],
-        [name: 'FPL'],
-        [name: 'FPRL', displayName: 'Family Private Law'],
-        [name: 'IAC', regex: 'ia.*'],
-        [name: 'IDAM', regex: '(idam-.*|cnp-idam-.*)'],
-        [name: 'MI', displayName: 'Management Information'],
-        [name: 'HMI'],
-        [name: 'PCQ'],
-        [name: 'Platform',credentialId: "hmcts-jenkins-rpe", regex: '(rpe-.*|draft-store.*|cmc-pdf-service|service-auth-provider-.*|spring-boot-template|data-extractor|data-generator|camunda-.*)'],
-        [name: 'Probate'],
-        [name: 'RD', displayName: 'Ref Data'],
-        [name: 'SSCS'],
-        [name: 'XUI', regex: 'rpx-.*'],
-        [name: 'RSE', displayName: 'Reform Software Engineering'],
-        [name: 'Civil', regex: 'civil-(?!damages).*'],
-        [name: 'WA'],
-        [name: 'FACT'],
-        [name: 'NFDIV', displayName: "No Fault Divorce"],
+        [name: 'Platform', regex: '(cnp-toffee.*)'],
 ]
 
 orgs.each { Map org ->
@@ -51,7 +23,7 @@ if (isSandbox()) {
     Map pipelineTestOrg = [
             name                           : 'Pipeline_Test',
             displayName                    : 'Pipeline Test',
-            regex                          : 'cnp-plum-.*|cnp-rhubarb-.*|cnp-jenkins-library',
+            regex                          : 'cnp-toffee-.*',
             branchesToInclude              : 'master PR*',
             jenkinsfilePath                : 'Jenkinsfile_pipeline_test',
             suppressDefaultJenkinsfile     : true,
@@ -79,7 +51,7 @@ Closure githubOrg(Map args = [:]) {
             jenkinsfilePath                : isSandbox() ? 'Jenkinsfile_parameterized' : 'Jenkinsfile_CNP',
             suppressDefaultJenkinsfile     : false,
             disableNamedBuildBranchStrategy: false,
-            credentialId                   : "hmcts-jenkins-" + args.name.toLowerCase()
+            credentialId                   : "hmcts-jenkins-cnp"
     ] << args
     def folderName = config.name
 

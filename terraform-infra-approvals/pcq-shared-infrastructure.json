@@ -1,6 +1,0 @@
-{
-  "resources": [
-    {"type": "azurerm_storage_management_policy"}
-  ],
-  "module_calls": []
-}

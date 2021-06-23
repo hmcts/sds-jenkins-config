@@ -1,6 +1,0 @@
-{
-  "resources": [
-    {"type": "azurerm_storage_blob"}
-  ],
-  "module_calls": []
-}
