@@ -31,10 +31,10 @@ apple-shared-infrastructure:
   tags:
     application: core
 pip:
-  team: "Publishing Information Project"
+  team: "Future Hearings - Publishing Information Project"
   namespace: "pip"
   slack:
     contact_channel: "#publishing-and-information"
     build_notices_channel: "#pip-build-notices"
   tags:
-    application: core
+    application: pip
