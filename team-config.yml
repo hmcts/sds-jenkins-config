@@ -14,3 +14,19 @@ toffee-shared-infrastructure:
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
+apple:
+  team: "Platform Operations"
+  namespace: "toffee"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+apple-shared-infrastructure:
+  team: "Platform Operations"
+  namespace: "toffee"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
