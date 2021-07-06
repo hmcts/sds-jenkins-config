@@ -15,8 +15,8 @@ toffee-shared-infrastructure:
   tags:
     application: core
 crumble:
-  team: "CNP"
-  namespace: "cnp"
+  team: "Platform Operations"
+  namespace: "toffee"
   slack:
     contact_channel: "#platops-help"
     build_notices_channel: "#platops-build-notices"
