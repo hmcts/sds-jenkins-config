@@ -14,3 +14,11 @@ toffee-shared-infrastructure:
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
+crumble:
+  team: "CNP"
+  namespace: "cnp"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
