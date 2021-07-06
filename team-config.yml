@@ -37,4 +37,4 @@ pip:
     contact_channel: "#publishing-and-information"
     build_notices_channel: "#pip-build-notices"
   tags:
-    application: pip
+    application: publishing-information
