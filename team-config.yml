@@ -30,3 +30,11 @@ apple-shared-infrastructure:
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
+pip:
+  team: "Publishing Information Project"
+  namespace: "pip"
+  slack:
+    contact_channel: "#publishing-and-information"
+    build_notices_channel: "#pip-build-notices"
+  tags:
+    application: core
