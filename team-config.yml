@@ -38,3 +38,11 @@ pip:
     build_notices_channel: "#pip-build-notices"
   tags:
     application: publishing-information
+hmi:
+  team: "Future Hearings - Hearing Management Information"
+  namespace: "hmi"
+  slack:
+    contact_channel: "#hearing-management-information"
+    build_notices_channel: "#hmi-build-notices"
+  tags:
+    application: hmi
