@@ -1,2 +1,4 @@
 prod:
   - repo: https://github.com/hmcts/sds-toffee-shared-infrastructure.git
+  - repo: https://github.com/hmcts/sds-toffee-recipes-service.git
+  - repo: https://github.com/hmcts/sds-toffee-frontend.git
