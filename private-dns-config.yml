@@ -14,5 +14,5 @@ subscriptions:
     active: true
     consulActive: true
     environments:
-      - name: staging
+      - name: stg
     resourceGroup: core-infra-intsvc-rg
