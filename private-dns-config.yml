@@ -9,7 +9,7 @@ subscriptions:
     resourceGroup: core-infra-intsvc-rg
 
   - name: "DTS-CFTPTL-INTSVC"
-    zoneTemplate: '${environment == "stg" ? "staging" : environment}.platform.hmcts.net'
+    zoneTemplate: "staging.platform.hmcts.net"
     ttl: 300
     active: true
     consulActive: true
