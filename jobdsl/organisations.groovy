@@ -11,6 +11,7 @@ List<Map> orgs = [
         [name: 'Platform', regex: '(cnp-toffee.*)'],
         [name: 'PIP', displayName: 'Publishing & Information Hub', regex: '(pip-.*|pih-.*)'],
         [name: 'VH', displayName: 'Video Hearings', regex: '(vh.*)'],
+        [name: 'HMI', displayName: 'Hearing Management Interface', regex: '(hmi-.*)'],
 ]
 
 orgs.each { Map org ->
