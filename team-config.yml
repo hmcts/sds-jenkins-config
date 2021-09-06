@@ -46,3 +46,11 @@ hmi:
     build_notices_channel: "#hmi-build-notices"
   tags:
     application: hmi
+vh:
+  team: "Future Hearings - Video Hearings"
+  namespace: "vh"
+  slack:
+    contact_channel: "#vh-devops"
+    build_notices_channel: "#vh-builds"
+  tags:
+    application: vh
