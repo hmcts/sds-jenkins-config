@@ -54,3 +54,11 @@ vh:
     build_notices_channel: "#vh-builds"
   tags:
     application: vh
+pre:
+  team: "Pre Recorded Evidence"
+  namespace: "pre"
+  slack:
+    contact_channel: "#dts-pre-rec-evidence-tech"
+    build_notices_channel: "#dts-pre-rec-evidence-tech"
+  tags:
+    application: pre
