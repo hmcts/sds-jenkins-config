@@ -59,6 +59,6 @@ pre:
   namespace: "pre"
   slack:
     contact_channel: "#dts-pre-rec-evidence-tech"
-    build_notices_channel: "#dts-pre-rec-evidence-tech"
+    build_notices_channel: "#pre-builds"
   tags:
     application: pre
