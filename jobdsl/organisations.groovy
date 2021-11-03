@@ -8,10 +8,11 @@ private boolean isSandbox() {
 }
 
 List<Map> orgs = [
-        [name: 'Platform', regex: '(cnp-toffee.*)'],
+        [name: 'Platform', regex: '(sds-toffee.*)'],
         [name: 'PIP', displayName: 'Publishing & Information Hub', regex: '(pip-.*|pih-.*)'],
-        [name: 'VH', displayName: 'Video Hearings', regex: '(vh.*)'],
-        [name: 'HMI', displayName: 'Hearing Management Interface', regex: '(hmi-.*)'],
+        [name: 'VH', displayName: 'Video Hearings', regex: '(vh-shared.*)'],
+        [name: 'HMI', displayName: 'Hearing Management Interface'],
+        [name: 'PRE', displayName: 'Pre Recorded Evidence', regex: '(pre-.*)'],
 ]
 
 orgs.each { Map org ->
@@ -63,7 +64,7 @@ Closure githubOrg(Map args = [:]) {
     def runningOnSandbox = isSandbox()
     String folderSandboxPrefix = runningOnSandbox ? 'Sandbox_' : ''
     GString orgFolderName = "HMCTS_${folderSandboxPrefix}${folderName}"
-    String wildcardBranchesToInclude = runningOnSandbox ? '*' : 'master demo PR-* perftest ithc preview ethosldata'
+    String wildcardBranchesToInclude = runningOnSandbox ? '*' : 'master demo PR-* test ithc dev'
     GString orgDescription = "<br>${config.displayName} team repositories"
 
     String displayNamePrefix = "HMCTS"

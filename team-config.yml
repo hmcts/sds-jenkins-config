@@ -46,3 +46,19 @@ hmi:
     build_notices_channel: "#hmi-build-notices"
   tags:
     application: hmi
+vh:
+  team: "Future Hearings - Video Hearings"
+  namespace: "vh"
+  slack:
+    contact_channel: "#vh-devops"
+    build_notices_channel: "#vh-builds"
+  tags:
+    application: vh
+pre:
+  team: "Pre Recorded Evidence"
+  namespace: "pre"
+  slack:
+    contact_channel: "#dts-pre-rec-evidence-tech"
+    build_notices_channel: "#pre-builds"
+  tags:
+    application: pre
