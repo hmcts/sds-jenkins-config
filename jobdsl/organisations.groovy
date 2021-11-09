@@ -13,7 +13,7 @@ List<Map> orgs = [
         [name: 'VH', displayName: 'Video Hearings', regex: '(vh-shared.*)'],
         [name: 'HMI', displayName: 'Hearing Management Interface'],
         [name: 'PRE', displayName: 'Pre Recorded Evidence', regex: '(pre-.*)'],
-        [name: 'LABS', displayName: 'Labs', regex: 'golden-path-.*'],
+        [name: 'LABS', displayName: 'Labs'],
 ]
 
 orgs.each { Map org ->
