@@ -62,3 +62,11 @@ pre:
     build_notices_channel: "#pre-builds"
   tags:
     application: pre
+labs:
+  team: "Platform Operations"
+  namespace: "labs"
+  slack:
+    contact_channel: "#platops-labs"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: labs
