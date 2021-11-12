@@ -1,0 +1,6 @@
+{
+  "resources": [
+    {"type": "azurerm_media_services_account"}
+  ],
+  "module_calls": []
+}
