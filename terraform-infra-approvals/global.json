@@ -11,8 +11,7 @@
     {"type": "azurerm_monitor_action_rule_action_group"},
     {"type": "azurerm_monitor_metric_alert"},
     {"type": "azurerm_storage_account"},
-    {"type": "random_password"},
-    {"type": "azurerm_storage_table"}
+    {"type": "random_password"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-queue?ref=master"},
