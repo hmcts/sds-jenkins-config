@@ -1,0 +1,9 @@
+{
+  "resources": [
+    {"type": "azurerm_media_services_account"},
+    {"type": "azurerm_virtual_network"}
+  ],
+  "module_calls": [
+    {"source":  "./infrastructure/modules/kv_secrets"}
+  ]
+}
