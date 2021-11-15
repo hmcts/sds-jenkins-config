@@ -33,7 +33,6 @@
     {"source":  "git@github.com:hmcts/cnp-module-application-insights?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-app-service-plan?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-metric-alert?ref=master"},
-    {"source":  "git@github.com:hmcts/terraform-module-apim-product?ref=master"},
     {"source":  "./infrastructure/modules/kv_secrets"}
   ]
 }
