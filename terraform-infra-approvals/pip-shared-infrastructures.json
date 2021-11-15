@@ -1,0 +1,8 @@
+{
+  "resources": [
+    {"type": "random_password"}
+  ],
+  "module_calls": [
+    {"source":  "./infrastructure/modules/kv_secrets"}
+  ]
+}
