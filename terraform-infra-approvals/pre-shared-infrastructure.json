@@ -1,7 +1,10 @@
 {
   "resources": [
     {"type": "azurerm_media_services_account"},
-    {"type": "azurerm_virtual_network"}
+    {"type": "azurerm_virtual_network"},
+    {"type": "random_password"},
+    {"type": "azurerm_windows_virtual_machine"},
+    {"type": "azurerm_network_interface"}
   ],
   "module_calls": []
 }
