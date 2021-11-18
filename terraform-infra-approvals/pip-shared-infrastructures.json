@@ -1,0 +1,9 @@
+{
+  "resources": [
+    {"type": "random_password"},
+    {"type": "azuread_application_password"}
+  ],
+  "module_calls": [
+    {"source":  "./infrastructure/modules/kv_secrets?ref=master"}
+  ]
+}
