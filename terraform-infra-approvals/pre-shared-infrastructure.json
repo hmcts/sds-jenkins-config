@@ -5,7 +5,8 @@
     {"type": "random_password"},
     {"type": "azurerm_windows_virtual_machine"},
     {"type": "azurerm_network_interface"},
-    {"type": "azurerm_public_ip"}
+    {"type": "azurerm_public_ip"},
+    {"type": "azurerm_key_vault_access_policy"}
   ],
   "module_calls": []
 }
