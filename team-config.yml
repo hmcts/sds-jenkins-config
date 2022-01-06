@@ -77,4 +77,4 @@ tt:
     contact_channel: "#pet"
     build_notices_channel: "#pet-devops"
   tags:
-    application: tt
+    application: tax-tribunals
