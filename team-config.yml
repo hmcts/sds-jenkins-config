@@ -70,7 +70,7 @@ labs:
     build_notices_channel: "#labs-build-notices"
   tags:
     application: core
-tt:
+tax-tribunals:
   team: "Tax Tribunals"
   namespace: "tt"
   slack:
