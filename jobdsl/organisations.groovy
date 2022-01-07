@@ -33,7 +33,6 @@ if (isSandbox()) {
             branchesToInclude              : 'master PR*',
             jenkinsfilePath                : 'Jenkinsfile_pipeline_test',
             suppressDefaultJenkinsfile     : true,
-            disableNamedBuildBranchStrategy: true,
             disableAgedRefsBranchStrategy  : true,
             credentialId                   : 'hmcts-jenkins-cnp'
     ]
@@ -56,7 +55,7 @@ Closure githubOrg(Map args = [:]) {
             regex                          : args.name.toLowerCase() + '.*',
             jenkinsfilePath                : isSandbox() ? 'Jenkinsfile_parameterized' : 'Jenkinsfile_CNP',
             suppressDefaultJenkinsfile     : false,
-            disableNamedBuildBranchStrategy: false,
+            enableNamedBuildBranchStrategy : false,
             credentialId                   : "hmcts-jenkins-cnp"
     ] << args
     def folderName = config.name
@@ -64,21 +63,29 @@ Closure githubOrg(Map args = [:]) {
     String jenkinsfilePath = config.jenkinsfilePath
 
     def runningOnSandbox = isSandbox()
-    String folderSandboxPrefix = runningOnSandbox ? 'Sandbox_' : ''
-    GString orgFolderName = "HMCTS_${folderSandboxPrefix}${folderName}"
-    String wildcardBranchesToInclude = runningOnSandbox ? '*' : 'master demo PR-* test ithc dev'
     GString orgDescription = "<br>${config.displayName} team repositories"
 
     String displayNamePrefix = "HMCTS"
+
+    String folderPrefix = ''
+    String wildcardBranchesToInclude = 'master demo PR-* perftest ithc preview ethosldata'
+    boolean suppressDefaultJenkinsfile = config.suppressDefaultJenkinsfile
+    boolean enableNamedBuildBranchStrategy = config.enableNamedBuildBranchStrategy
+
+    if (runningOnSandbox) {
+        folderPrefix = 'Sandbox_'
+        wildcardBranchesToInclude = '*'
+        // We want the labs folder to build on push but others don't need to
+        enableNamedBuildBranchStrategy = config.name == 'LABS' ? false : true
+    }
+    GString orgFolderName = "HMCTS_${folderPrefix}${folderName}"
 
     if (config.branchesToInclude) {
         wildcardBranchesToInclude = config.branchesToInclude
     }
 
-    boolean suppressDefaultJenkinsfile = config.suppressDefaultJenkinsfile
-
     if (config.nightly) {
-        orgFolderName = "HMCTS_${folderSandboxPrefix}Nightly_${folderName}"
+        orgFolderName = "HMCTS_${folderPrefix}Nightly_${folderName}"
         //noinspection GroovyAssignabilityCheck
         orgDescription = "<br>Nightly tests for ${config.displayName}  will be scheduled using this organisation on the AAT Version of the application"
 
@@ -87,6 +94,7 @@ Closure githubOrg(Map args = [:]) {
 
         jenkinsfilePath = runningOnSandbox ? 'Jenkinsfile_nightly_sandbox' : 'Jenkinsfile_nightly'
         suppressDefaultJenkinsfile = true
+        enableNamedBuildBranchStrategy = true
     }
 
     return {
@@ -154,7 +162,7 @@ Closure githubOrg(Map args = [:]) {
                 }
 
                 // prevent builds triggering automatically from SCM push for sandbox and nightly builds
-                if ((runningOnSandbox || config.nightly) && !config.disableNamedBuildBranchStrategy) {
+                if (enableNamedBuildBranchStrategy) {
                     node / buildStrategies / 'jenkins.branch.buildstrategies.basic.NamedBranchBuildStrategyImpl'(plugin: 'basic-branch-build-strategies@1.1.1') {
                         filters()
                     }
