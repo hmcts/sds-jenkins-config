@@ -3,3 +3,4 @@ prod:
   - repo: https://github.com/hmcts/sds-toffee-recipes-service.git
   - repo: https://github.com/hmcts/sds-toffee-frontend.git
   - repo: https://github.com/hmcts/tax-tribunals-shared-infrastructure
+  - repo: https://github.com/hmcts/pip-shared-infrastructures.git
