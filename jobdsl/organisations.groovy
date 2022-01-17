@@ -15,6 +15,7 @@ List<Map> orgs = [
         [name: 'PRE', displayName: 'Pre Recorded Evidence', regex: '(pre-.*)'],
         [name: 'LABS', displayName: 'Labs'],
         [name: 'TT', displayName: 'Tax Tribunals', regex: '(tax-tribunals.*)'],
+        [name: 'ET', displayName: 'Employment Tribunals', regex: '(employment-tribunals.*)'],
 ]
 
 orgs.each { Map org ->
