@@ -1,0 +1,6 @@
+{
+  "resources": [
+    {"type": "azurerm_subnet"}
+  ],
+  "module_calls": []
+}
