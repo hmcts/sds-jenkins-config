@@ -11,8 +11,7 @@
     {"type": "azurerm_monitor_action_rule_action_group"},
     {"type": "azurerm_monitor_metric_alert"},
     {"type": "azurerm_storage_account"},
-    {"type": "azurerm_api_management_api_operation_policy"},
-    {"type": "azurerm_subnet"}
+    {"type": "azurerm_api_management_api_operation_policy"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-queue?ref=master"},

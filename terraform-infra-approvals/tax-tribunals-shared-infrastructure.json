@@ -1,0 +1,8 @@
+{
+  "resources": [
+    {"type": "azurerm_subnet"}
+  ],
+  "module_calls": [
+    {"source":  "git@github.com:hmcts/tax-tribunals-shared-infrastructure?ref=master"}
+  ]
+}
