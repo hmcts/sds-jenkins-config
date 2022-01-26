@@ -6,7 +6,9 @@
     {"type": "azurerm_windows_virtual_machine"},
     {"type": "azurerm_network_interface"},
     {"type": "azurerm_public_ip"},
-    {"type": "azurerm_key_vault_access_policy"}
+    {"type": "azurerm_key_vault_access_policy"},
+    {"type": "azurerm_private_endpoint"},
+    {"type": "azurerm_private_dns_zone"}
   ],
   "module_calls": []
 }
