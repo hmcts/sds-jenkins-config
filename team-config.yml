@@ -86,3 +86,11 @@ employment-tribunals:
     build_notices_channel: "#pet-devops"
   tags:
     application: employment-tribunals
+help-with-fees:
+  team: "Help with Fees"
+  namespace: "hwf"
+  slack:
+    contact_channel: "#pet"
+    build_notices_channel: "#pet-devops"
+  tags:
+    application: help-with-fees
