@@ -6,4 +6,4 @@ prod:
   - repo: https://github.com/hmcts/employment-tribunals-shared-infrastructure.git
   - repo: https://github.com/hmcts/pip-shared-infrastructures.git
   - repo: https://github.com/hmcts/pip-shared-infrastructure-bootstap.git
-  - repo: https://github.com/hmcts/hwf-shared-infrastructure.git
+  - repo: https://github.com/hmcts/help-with-fees-shared-infrastructure.git
