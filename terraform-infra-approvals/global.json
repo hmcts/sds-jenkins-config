@@ -31,6 +31,7 @@
     {"source":  "git@github.com:hmcts/cnp-module-postgres?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-postgres?ref=postgresql_tf"},
     {"source":  "git@github.com:hmcts/cnp-module-postgres?ref=pet-disable-dns-setting"},
+    {"source":  "git@github.com:hmcts/cnp-module-postgres?ref=help-with-fees"},
     {"source":  "git@github.com:hmcts/cnp-module-action-group?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-application-insights?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-app-service-plan?ref=master"},
