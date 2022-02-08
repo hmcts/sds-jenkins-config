@@ -1,0 +1,7 @@
+{
+  "resources": [
+    {"type": "azurerm_aadb2c_directory"}
+  ],
+  "module_calls": [
+  ]
+}
