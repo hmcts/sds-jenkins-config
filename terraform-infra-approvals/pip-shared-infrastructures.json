@@ -1,9 +1,11 @@
 {
   "resources": [
     {"type": "random_password"},
-    {"type": "azuread_application_password"}
+    {"type": "azuread_application_password"},
+    {"type": "azurerm_automation_account"}
   ],
   "module_calls": [
+    {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-sp-recycle?ref=master"},
     {"source":  "./infrastructure/modules/kv_secrets?ref=master"}
   ]
 }
