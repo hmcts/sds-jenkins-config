@@ -5,7 +5,7 @@
     {"type": "azurerm_automation_account"}
   ],
   "module_calls": [
-    {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-sp-recycle?ref=master"},
+    {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-app-recycle?ref=master"},
     {"source":  "./infrastructure/modules/kv_secrets?ref=master"}
   ]
 }
