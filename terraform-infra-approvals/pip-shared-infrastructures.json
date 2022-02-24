@@ -2,7 +2,8 @@
   "resources": [
     {"type": "random_password"},
     {"type": "azuread_application_password"},
-    {"type": "azurerm_automation_account"}
+    {"type": "azurerm_automation_account"},
+    {"type": "azurerm_storage_blob"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-app-recycle?ref=master"},
