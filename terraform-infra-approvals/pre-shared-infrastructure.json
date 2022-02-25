@@ -9,7 +9,10 @@
     {"type": "azurerm_key_vault_access_policy"},
     {"type": "azurerm_private_endpoint"},
     {"type": "azurerm_bastion_host"},
-    {"type": "azurerm_storage_container"}
+    {"type": "azurerm_storage_container"},
+    {"type": "azurerm_subnet"}
+   
+
   ],
   "module_calls": []
 }
