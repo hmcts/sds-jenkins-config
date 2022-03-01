@@ -13,7 +13,6 @@ List<Map> orgs = [
         [name: 'VH', displayName: 'Video Hearings', regex: '(vh-shared.*)'],
         [name: 'HMI', displayName: 'Hearing Management Interface'],
         [name: 'PRE', displayName: 'Pre Recorded Evidence', regex: '(pre-.*)'],
-        [name: 'LABS', displayName: 'Labs'],
         [name: 'TT', displayName: 'Tax Tribunals', regex: '(tax-tribunals.*)'],
         [name: 'ET', displayName: 'Employment Tribunals', regex: '(employment-tribunals.*)'],
         [name: 'HWF', displayName: 'Help with Fees', regex: '(help-with-fees.*)'],
