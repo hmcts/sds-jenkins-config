@@ -4,5 +4,7 @@
     {"type": "azurerm_private_endpoint"}
 
   ],
-  "module_calls": []
+  "module_calls": [
+    {"source":  "git@github.com:contino/cnp-module-redis?ref=master"}
+  ]
 }
