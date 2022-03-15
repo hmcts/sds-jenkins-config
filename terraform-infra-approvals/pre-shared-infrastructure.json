@@ -9,7 +9,12 @@
     {"type": "azurerm_key_vault_access_policy"},
     {"type": "azurerm_private_endpoint"},
     {"type": "azurerm_bastion_host"},
-    {"type": "azurerm_storage_container"}
+    {"type": "azurerm_storage_container"},
+    {"type": "azurerm_subnet"},
+    {"type": "azurerm_managed_disk"},
+    {"type": "azurerm_virtual_machine_data_disk_attachment"}
+   
+
   ],
   "module_calls": []
 }
