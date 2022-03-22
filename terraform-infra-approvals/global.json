@@ -15,7 +15,8 @@
     {"type": "azurerm_storage_blob"},
     {"type": "azuread_application"},
     {"type": "random_uuid"},
-    {"type": "null_resource"}
+    {"type": "null_resource"},
+    {"type": "azurerm_virtual_network_peering"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-queue?ref=master"},
