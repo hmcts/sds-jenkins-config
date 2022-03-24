@@ -16,7 +16,7 @@
     {"type": "azurerm_virtual_network_peering"},
     {"type": "azurerm_media_transform"}
    
-
+    
   ],
   "module_calls": []
 }
