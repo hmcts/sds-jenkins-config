@@ -14,9 +14,9 @@
     {"type": "azurerm_managed_disk"},
     {"type": "azurerm_virtual_machine_data_disk_attachment"},
     {"type": "azurerm_virtual_network_peering"},
-    {"type": "azurerm_media_transform"}
-
-   
+    {"type": "azurerm_media_transform"},
+    {"type": "azurerm_role_assignment"},
+    {"type": "azuread_application"}
     
   ],
   "module_calls": []
