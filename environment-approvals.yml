@@ -8,3 +8,5 @@ prod:
   - repo: https://github.com/hmcts/pip-shared-infrastructure-bootstap.git
   - repo: https://github.com/hmcts/pip-data-management.git
   - repo: https://github.com/hmcts/help-with-fees-shared-infrastructure.git
+  - repo: https://github.com/hmcts/pip-account-management.git
+  - repo: https://github.com/hmcts/pip-subscription-management.git
