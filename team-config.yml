@@ -94,7 +94,7 @@ help-with-fees:
     build_notices_channel: "#pet-devops"
   tags:
     application: help-with-fees
-Child Arrangement Service:
+c100:
   team: "Child Arrangement Service"
   namespace: "c100"
   slack:
