@@ -1,6 +1,5 @@
 {
   "resources": [
-    {"type": "azurerm_subnet"},
     {"type": "azurerm_private_endpoint"}
 
   ],
