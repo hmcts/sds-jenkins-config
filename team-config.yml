@@ -37,7 +37,7 @@ pip:
     contact_channel: "#publishing-and-information"
     build_notices_channel: "#pip-build-notices"
   tags:
-    application: publishing-information
+    application: publishing-information-service
 hmi:
   team: "Future Hearings - Hearing Management Information"
   namespace: "hmi"
@@ -45,7 +45,7 @@ hmi:
     contact_channel: "#hearing-management-information"
     build_notices_channel: "#hmi-build-notices"
   tags:
-    application: hmi
+    application: hearings-management-interface
 vh:
   team: "Future Hearings - Video Hearings"
   namespace: "vh"
@@ -53,7 +53,7 @@ vh:
     contact_channel: "#vh-devops"
     build_notices_channel: "#vh-builds"
   tags:
-    application: videohearings
+    application: video-hearings-service
 pre:
   team: "Pre Recorded Evidence"
   namespace: "pre"
