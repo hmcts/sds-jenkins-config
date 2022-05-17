@@ -8,15 +8,7 @@ private boolean isSandbox() {
 }
 
 List<Map> orgs = [
-        [name: 'Platform', regex: '(sds-toffee.*)'],
-        [name: 'PIP', displayName: 'Publishing & Information Hub', regex: '(pip-.*|pih-.*)'],
-        [name: 'VH', displayName: 'Video Hearings', regex: '(vh-shared.*)'],
-        [name: 'HMI', displayName: 'Hearing Management Interface'],
-        [name: 'PRE', displayName: 'Pre Recorded Evidence', regex: '(pre-.*)'],
-        [name: 'TT', displayName: 'Tax Tribunals', regex: '(tax-tribunals.*)'],
-        [name: 'ET', displayName: 'Employment Tribunals', regex: '(employment-tribunals.*)'],
-        [name: 'HWF', displayName: 'Help with Fees', regex: '(help-with-fees.*)'],
-        [name: 'C100', displayName: 'Child Arrangement Service', regex: '(c100.*)'],
+    [name: 'HMCTS', credentialsId: 'hmcts-jenkins-cnp', displayName: 'HMCTS', topic: 'jenkins-sds'],
 ]
 
 orgs.each { Map org ->
@@ -30,13 +22,13 @@ orgs.each { Map org ->
 if (isSandbox()) {
     Map pipelineTestOrg = [
             name                           : 'Pipeline_Test',
-            displayName                    : 'Pipeline Test',
+            displayName                    : 'HMCTS - Pipeline Test',
             regex                          : 'cnp-toffee-.*',
             branchesToInclude              : 'master PR*',
             jenkinsfilePath                : 'Jenkinsfile_pipeline_test',
+            credentialsId                  : 'hmcts-jenkins-cnp',
             suppressDefaultJenkinsfile     : true,
             disableAgedRefsBranchStrategy  : true,
-            credentialId                   : 'hmcts-jenkins-cnp'
     ]
     githubOrg(pipelineTestOrg).call()
 }
@@ -47,6 +39,7 @@ if (isSandbox()) {
  *  - name: the name of the organisation
  *  - displayName (optional, name will be used by default): display name, will be prefixed by HMCTS -
  *  - regex (optional, name.* will be used by default): regex to use for finding repos owned by this team
+ *  - topic (optional): GitHub topic to use to find repos owned by the team
  *  - jenkinsfilePath (advanced use only): custom jenkinsfile path
  *  - suppressDefaultJenkinsfile: don't use the default Jenkinsfile
  *  - nightly: whether this is nightly org automatically set by the dsl
@@ -54,11 +47,9 @@ if (isSandbox()) {
 Closure githubOrg(Map args = [:]) {
     def config = [
             displayName                    : args.name,
-            regex                          : args.name.toLowerCase() + '.*',
             jenkinsfilePath                : isSandbox() ? 'Jenkinsfile_parameterized' : 'Jenkinsfile_CNP',
             suppressDefaultJenkinsfile     : false,
             enableNamedBuildBranchStrategy : false,
-            credentialId                   : "hmcts-jenkins-cnp"
     ] << args
     def folderName = config.name
 
@@ -67,47 +58,51 @@ Closure githubOrg(Map args = [:]) {
     def runningOnSandbox = isSandbox()
     GString orgDescription = "<br>${config.displayName} team repositories"
 
-    String displayNamePrefix = "HMCTS"
+    def orgDisplayName = config.displayName
+    
+    String credId = config.credentialsId
 
-    String folderPrefix = ''
-    String wildcardBranchesToInclude = 'master demo PR-* perftest ithc preview ethosldata'
+    String folderSuffix = ''
+    String wildcardBranchesToInclude = 'master demo PR-* perftest ithc preview'
     boolean suppressDefaultJenkinsfile = config.suppressDefaultJenkinsfile
     boolean enableNamedBuildBranchStrategy = config.enableNamedBuildBranchStrategy
 
     if (runningOnSandbox) {
-        folderPrefix = 'Sandbox_'
+        folderSuffix = '_Sandbox'
         wildcardBranchesToInclude = '*'
         // We want the labs folder to build on push but others don't need to
-        enableNamedBuildBranchStrategy = config.name == 'LABS' ? false : true
+        enableNamedBuildBranchStrategy = config.name == 'LABS' || config.name == 'Pipeline_Test' ? false : true
     }
-    GString orgFolderName = "HMCTS_${folderPrefix}${folderName}"
+    GString orgFolderName = "${folderName}${folderSuffix}"
 
     if (config.branchesToInclude) {
         wildcardBranchesToInclude = config.branchesToInclude
     }
 
     if (config.nightly) {
-        orgFolderName = "HMCTS_${folderPrefix}Nightly_${folderName}"
+        orgFolderName = "${folderName}_Nightly${folderSuffix}"
         //noinspection GroovyAssignabilityCheck
-        orgDescription = "<br>Nightly tests for ${config.displayName}  will be scheduled using this organisation on the AAT Version of the application"
+        orgDescription = "<br>Nightly tests for ${orgDisplayName}  will be scheduled using this organisation on the AAT Version of the application"
 
-        displayNamePrefix += " Nightly Tests"
+        orgDisplayName += " Nightly Tests"
         wildcardBranchesToInclude = "master nightly-dev"
 
         jenkinsfilePath = runningOnSandbox ? 'Jenkinsfile_nightly_sandbox' : 'Jenkinsfile_nightly'
         suppressDefaultJenkinsfile = true
         enableNamedBuildBranchStrategy = true
+
+        credId = "hmcts-jenkins-cnp"
     }
 
     return {
         organizationFolder(orgFolderName) {
             description(orgDescription)
-            displayName("${displayNamePrefix} - ${config.displayName}")
+            displayName(orgDisplayName)
             organizations {
                 github {
                     repoOwner("HMCTS")
                     apiUri("https://api.github.com")
-                    credentialsId(config.credentialId)
+                    credentialsId(credId)
                 }
             }
 
@@ -130,9 +125,19 @@ Closure githubOrg(Map args = [:]) {
             }
             configure { node ->
                 def traits = node / navigators / 'org.jenkinsci.plugins.github__branch__source.GitHubSCMNavigator' / traits
-                traits << 'jenkins.scm.impl.trait.RegexSCMSourceFilterTrait' {
-                    regex(config.regex)
+
+                if (config.regex) {
+                    traits << 'jenkins.scm.impl.trait.RegexSCMSourceFilterTrait' {
+                        regex(config.regex)
+                    }
                 }
+
+                if (config.topic) {
+                    traits << 'org.jenkinsci.plugins.github__branch__source.TopicsTrait' {
+                        topicList(config.topic)
+                    }
+                }
+
                 traits << 'jenkins.scm.impl.trait.WildcardSCMHeadFilterTrait' {
                     includes(wildcardBranchesToInclude)
                     excludes()
@@ -165,7 +170,7 @@ Closure githubOrg(Map args = [:]) {
 
                 // prevent builds triggering automatically from SCM push for sandbox and nightly builds
                 if (enableNamedBuildBranchStrategy) {
-                    node / buildStrategies / 'jenkins.branch.buildstrategies.basic.NamedBranchBuildStrategyImpl'(plugin: 'basic-branch-build-strategies@1.1.1') {
+                    node / buildStrategies / 'jenkins.branch.buildstrategies.basic.NamedBranchBuildStrategyImpl'(plugin: 'basic-branch-build-strategies@1.3.2') {
                         filters()
                     }
                 }
