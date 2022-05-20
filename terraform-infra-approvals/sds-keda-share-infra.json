@@ -1,0 +1,7 @@
+{
+  "resources": [
+    {"type": "azurerm_user_assigned_identity"}
+  ],
+  "module_calls": []
+}
+
