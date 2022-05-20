@@ -10,3 +10,4 @@ prod:
   - repo: https://github.com/hmcts/help-with-fees-shared-infrastructure.git
   - repo: https://github.com/hmcts/pip-account-management.git
   - repo: https://github.com/hmcts/pip-subscription-management.git
+  - repo: https://github.com/hmcts/dlrm-libragob-shared-infrastructure.git
