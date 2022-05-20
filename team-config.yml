@@ -109,4 +109,12 @@ keda:
     contact_channel: "#platops-help"
     build_notices_channel: "#platops-build-notices"
   tags:
-    application: core 
+    application: core
+libragob:
+  team: "Platform Operations"
+  namespace: "libragob"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: libragob 
