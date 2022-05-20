@@ -1,6 +1,6 @@
 {
   "resources": [
-    {"type": "azurerm_user_assigned_identity managed_identity"}
+    {"type": "azurerm_user_assigned_identity"}
   ],
   "module_calls": []
 }
