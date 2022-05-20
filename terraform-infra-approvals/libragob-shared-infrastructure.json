@@ -7,7 +7,8 @@
     {"type": "azurerm_route_table"},
     {"type": "azurerm_subnet"},
     {"type": "azurerm_subnet_network_security_group_association"},
-    {"type": "azurerm_virtual_network"}
+    {"type": "azurerm_virtual_network"},
+    {"type": "azurerm_virtual_network_peering"}
   ],
   "module_calls": []
 }
