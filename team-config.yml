@@ -102,4 +102,11 @@ c100:
     build_notices_channel: "#pet-devops"
   tags:
     application: c100
-  
+keda:
+  team: "Platform Operations"
+  namespace: "admin"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core 
