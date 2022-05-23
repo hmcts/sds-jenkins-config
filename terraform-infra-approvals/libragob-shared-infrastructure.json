@@ -10,7 +10,8 @@
     {"type": "azurerm_virtual_network"},
     {"type": "azurerm_virtual_network_peering"},
     {"type": "azurerm_private_dns_zone"},
-    {"type": "azurerm_private_dns_zone_virtual_network_link"}
+    {"type": "azurerm_private_dns_zone_virtual_network_link"},
+    {"type": "azurerm_virtual_machine"}
   ],
   "module_calls": []
 }
