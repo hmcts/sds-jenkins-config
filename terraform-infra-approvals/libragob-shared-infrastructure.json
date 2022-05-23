@@ -12,7 +12,7 @@
     {"type": "azurerm_private_dns_zone"},
     {"type": "azurerm_private_dns_zone_virtual_network_link"},
     {"type": "azurerm_key_vault_secret"},
-    {"type": "random_password"}
+    {"type": "tls_private_key"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/oracle-azure-infrastructure-terraform-modules.git//azure-vm?ref=0.0.55"}
