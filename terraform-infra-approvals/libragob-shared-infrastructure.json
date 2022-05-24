@@ -7,12 +7,11 @@
     {"type": "azurerm_route_table"},
     {"type": "azurerm_subnet"},
     {"type": "azurerm_subnet_network_security_group_association"},
+    {"type": "azurerm_subnet_route_table_association"},
     {"type": "azurerm_virtual_network"},
     {"type": "azurerm_virtual_network_peering"},
     {"type": "azurerm_private_dns_zone"},
-    {"type": "azurerm_private_dns_zone_virtual_network_link"},
-    {"type": "azurerm_key_vault_secret"},
-    {"type": "tls_private_key"}
+    {"type": "azurerm_private_dns_zone_virtual_network_link"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/oracle-azure-infrastructure-terraform-modules.git//azure-vm?ref=0.0.55"}
