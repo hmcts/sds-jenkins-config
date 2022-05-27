@@ -11,6 +11,6 @@
     {"type": "tls_private_key"}
   ],
   "module_calls": [
-    {"source":  "git@github.com:hmcts/oracle-azure-infrastructure-terraform-modules.git//azure-vm?ref=0.0.55"}
+    {"source":  "git@github.com:hmcts/oracle-azure-infrastructure-terraform-modules.git//azure-vm?ref=0.0.56"}
   ]
 }
