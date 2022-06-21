@@ -15,7 +15,6 @@
   "module_calls": [
     {"source":  "git@github.com:hmcts/oracle-azure-infrastructure-terraform-modules.git//azure-vm?ref=0.0.56"},
     {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap?ref=master"},
-    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
-    {"source":  "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"}
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"}
   ]
 }
