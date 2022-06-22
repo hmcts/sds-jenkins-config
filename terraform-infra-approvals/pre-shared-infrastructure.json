@@ -16,8 +16,12 @@
     {"type": "azurerm_virtual_network_peering"},
     {"type": "azurerm_media_transform"},
     {"type": "azurerm_role_assignment"},
+    {"type": "azurerm_disk_encryption_set"},
+    {"type": "azurerm_key_vault_key"},
     {"type": "azurerm_monitor_diagnostic_setting"}
  
   ],
-  "module_calls": []
+  "module_calls": [
+    
+  ]
 }
