@@ -22,6 +22,6 @@
  
   ],
   "module_calls": [
-    
+    {"source":  "git@github.com:hmcts/terraform-module-log-analytics-workspace-id.git?ref=master"}
   ]
 }
