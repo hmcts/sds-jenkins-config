@@ -15,7 +15,8 @@
     {"type": "azurerm_virtual_machine_data_disk_attachment"},
     {"type": "azurerm_virtual_network_peering"},
     {"type": "azurerm_media_transform"},
-    {"type": "azurerm_role_assignment"}
+    {"type": "azurerm_role_assignment"},
+    {"type": "azurerm_monitor_diagnostic_setting"}
  
   ],
   "module_calls": []
