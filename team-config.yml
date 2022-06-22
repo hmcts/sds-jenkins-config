@@ -102,4 +102,27 @@ c100:
     build_notices_channel: "#pet-devops"
   tags:
     application: c100
-  
+keda:
+  team: "Platform Operations"
+  namespace: "admin"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: core
+libragob:
+  team: "Platform Operations"
+  namespace: "libragob"
+  slack:
+    contact_channel: "#platops-help"
+    build_notices_channel: "#platops-build-notices"
+  tags:
+    application: libragob 
+lgy-iac:
+  team: "DTS Legacy Apps"
+  namespace: "dts-legacy"
+  slack:
+    contact_channel: "#dts-legacy-apps-contact"
+    build_notices_channel: "#dts-legacy-apps-azure-builds"
+  tags:
+    application: IAC-Fees

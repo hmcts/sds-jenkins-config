@@ -40,6 +40,6 @@
     {"source":  "git@github.com:hmcts/cnp-module-application-insights?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-app-service-plan?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-metric-alert?ref=master"},
-    {"source":  "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=DTSPO-6371_remove_provider"}
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"}
   ]
 }
