@@ -12,3 +12,4 @@ prod:
   - repo: https://github.com/hmcts/pip-subscription-management.git
   - repo: https://github.com/hmcts/libragob-shared-infrastructure.git
   - repo: https://github.com/hmcts/sds-keda-infrastructure.git
+  - repo: https://github.com/hmcts/pre-shared-infrastructures.git
