@@ -10,7 +10,8 @@
     {"type": "azurerm_subnet_route_table_association"},
     {"type": "tls_private_key"},
     {"type": "azurerm_virtual_machine_extension"},
-    {"type": "local_file"}
+    {"type": "local_file"},
+    {"type": "azurerm_recovery_services_vault"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/oracle-azure-infrastructure-terraform-modules.git//azure-vm?ref=0.0.56"},
