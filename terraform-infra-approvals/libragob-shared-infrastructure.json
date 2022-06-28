@@ -11,8 +11,8 @@
     {"type": "tls_private_key"},
     {"type": "azurerm_virtual_machine_extension"},
     {"type": "local_file"},
-    {"type": "azurerm_recovery_services_vault"}
-    {"type": "azurerm_backup_protected_vm"}
+    {"type": "azurerm_recovery_services_vault"},
+    {"type": "azurerm_backup_protected_vm"},
     {"type": "azurerm_backup_policy_vm"}
   ],
   "module_calls": [
