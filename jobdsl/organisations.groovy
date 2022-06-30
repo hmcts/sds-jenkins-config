@@ -23,7 +23,7 @@ if (isSandbox()) {
     Map pipelineTestOrg = [
             name                           : 'Pipeline_Test',
             displayName                    : 'HMCTS - Pipeline Test',
-            regex                          : 'cnp-toffee-.*',
+            regex                          : 'sds-toffee-.*',
             branchesToInclude              : 'master PR*',
             jenkinsfilePath                : 'Jenkinsfile_pipeline_test',
             credentialsId                  : 'hmcts-jenkins-cnp',
