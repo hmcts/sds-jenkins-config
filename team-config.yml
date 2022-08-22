@@ -127,7 +127,7 @@ lgy-iac:
   tags:
     application: IAC-Fees
 makeaplea:
-  team: "Child Arrangement Service"
+  team: "Performance Enhancement Team"
   namespace: "makeaplea"
   slack:
     contact_channel: "#pet"
