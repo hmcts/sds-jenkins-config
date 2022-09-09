@@ -30,6 +30,14 @@ apple-shared-infrastructure:
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
+my-time:
+  team: "My Time - Tracking Leave Project"
+  namespace: "my-time"
+  slack:
+    contact_channel: "#my-time-tech"
+    build_notices_channel: "#my-time-builds"
+  tags:
+    application: my-time
 pip:
   team: "Future Hearings - Publishing Information Project"
   namespace: "pip"
