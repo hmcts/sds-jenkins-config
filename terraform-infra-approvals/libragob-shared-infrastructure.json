@@ -13,6 +13,8 @@
     {"type": "local_file"},
     {"type": "azurerm_recovery_services_vault"},
     {"type": "azurerm_backup_protected_vm"},
+    {"type": "azapi_resource"},
+    {"type": "azapi_update_resource"},
     {"type": "azurerm_backup_policy_vm"}
   ],
   "module_calls": [
