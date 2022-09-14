@@ -15,6 +15,8 @@
     {"type": "azurerm_backup_protected_vm"},
     {"type": "azapi_resource"},
     {"type": "azapi_update_resource"},
+    {"type": "azurerm_private_endpoint"},
+    {"type": "azurerm_private_dns_a_record"},
     {"type": "azurerm_backup_policy_vm"}
   ],
   "module_calls": [
