@@ -18,6 +18,7 @@
     {"type": "azurerm_private_endpoint"},
     {"type": "azurerm_private_dns_a_record"},
     {"type": "azurerm_private_dns_zone"},
+    {"type": "azurerm_private_dns_zone_virtual_network_link"},
     {"type": "azurerm_backup_policy_vm"}
   ],
   "module_calls": [
