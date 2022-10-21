@@ -27,5 +27,7 @@
     {"type": "azurerm_template_deployment"},
     {"type": "azurerm_resource_group_template_deployment"}
   ],
-  "module_calls": []
+  "module_calls": [
+  {"source":  "./modules/vnet_peering?ref=master"} 
+]
 }
