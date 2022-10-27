@@ -25,9 +25,13 @@
     {"type": "time_offset"},
     {"type": "azurerm_network_interface_security_group_association"},
     {"type": "azurerm_template_deployment"},
-    {"type": "azurerm_resource_group_template_deployment"}
+    {"type": "azurerm_resource_group_template_deployment"},
+    {"type": "azurerm_network_security_group"},
+    {"type": "azurerm_subnet_network_security_group_association"}
   ],
+
+  
   "module_calls": [
-  {"source":  "./modules/vnet_peering?ref=master"} 
+  {"source":  "./modules/vnet_peering/"} 
 ]
 }
