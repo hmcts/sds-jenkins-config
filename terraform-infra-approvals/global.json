@@ -45,6 +45,5 @@
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=adding-postgresql-ad-administrator"},
     {"source":  "git@github.com:hmcts/terraform-module-dynatrace-oneagent.git?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-start-stop-vm?ref=master"}
-
   ]
 }
