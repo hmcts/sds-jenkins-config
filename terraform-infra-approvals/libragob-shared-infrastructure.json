@@ -29,6 +29,7 @@
     {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=db-collation"},
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=fix-db-name-issue"},
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"}
   ]
 }
