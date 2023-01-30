@@ -37,8 +37,7 @@
   
   "module_calls": [
   {"source":  "./modules/vnet_peering/?ref=master"},
-  {"source":  "./modules/vnet_peering/"} 
+  {"source":  "./modules/vnet_peering/"},
+  {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=db-collation"}
 ]
-  
-
 }
