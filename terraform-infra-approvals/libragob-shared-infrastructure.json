@@ -20,7 +20,9 @@
     {"type": "azurerm_private_dns_zone"},
     {"type": "azurerm_private_dns_zone_virtual_network_link"},
     {"type": "azurerm_backup_policy_vm"},
-    {"type": "azurerm_servicebus_queue"}
+    {"type": "azurerm_servicebus_queue"},
+    {"type": "azurerm_postgresql_flexible_server_active_directory_administrator"}
+
     
   ],
     
