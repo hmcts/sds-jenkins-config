@@ -1,0 +1,22 @@
+{
+    "resources": [
+      {"type": "azurerm_virtual_network"},
+      {"type": "azurerm_public_ip"},
+      {"type": "azurerm_bastion_host"},
+      {"type": "azurerm_subnet"},
+      {"type": "azurerm_virtual_network_peering"},
+      {"type": "azurerm_monitor_diagnostic_setting"},
+      {"type": "azurerm_subnet_network_security_group_association"},
+      {"type": "azurerm_private_dns_a_record"},
+      {"type": "azurerm_private_dns_zone_virtual_network_link"},
+      {"type": "azurerm_subnet_route_table_association"},
+      {"type": "azurerm_route_table"}
+    ],
+
+    "module_calls": [
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap.git?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-vm-module.git?ref=master"}
+  ]
+  }
+  
