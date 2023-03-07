@@ -1,0 +1,21 @@
+{
+    "resources": [
+      {"type": "random_password"},
+      {"type": "azurerm_key_vault_access_policy"},
+      {"type": "azurerm_subnet"},
+      {"type": "azurerm_role_assignment"},
+      {"type": "azurerm_disk_encryption_set"},
+      {"type": "azurerm_key_vault_key"},
+      {"type": "azurerm_monitor_diagnostic_setting"},
+      {"type": "azurerm_recovery_services_vault"},
+      {"type": "azurerm_backup_container_storage_account"},
+      {"type": "azurerm_snapshot"},
+      {"type": "azurerm_data_protection_backup_vault"}
+    ],
+    
+    "module_calls": [
+    {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap.git?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-vm-module.git?ref=master"}
+  ]
+  }
+  
