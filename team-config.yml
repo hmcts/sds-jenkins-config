@@ -142,3 +142,11 @@ makeaplea:
     build_notices_channel: "#pet-devops"
   tags:
     application: makeaplea
+darts:
+  team: "Darts Modernisation"
+  namespace: "darts"
+  slack:
+    contact_channel: "#darts-devs"
+    build_notices_channel: "#darts-builds"
+  tags:
+    application: darts
