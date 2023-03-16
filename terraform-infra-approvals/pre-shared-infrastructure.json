@@ -39,14 +39,16 @@
     {"type": "azurerm_snapshot"},
     {"type": "azurerm_data_protection_backup_vault"},
     {"type": "azurerm_data_protection_backup_policy_blob_storage"},
-    {"type": "azurerm_data_protection_backup_instance_blob_storage"}
+    {"type": "azurerm_data_protection_backup_instance_blob_storage"},
+    {"type": "azurerm_service_plan"},
+    {"type": "azurerm_windows_function_app"},
+    {"type": "azurerm_linux_function_app"}
   ],
   
   "module_calls": [
   {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-vm-module.git?ref=master"},
-  {"source":  "git@github.com:hmcts/pre-shared-infrastructure/modules/backup_vault.git?ref=preview"},
-  {"source":  "git@github.com:hmcts/pre-shared-infrastructure/modules/function_app.git?ref=preview"}
+  {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git?ref=preview"}
 ]
 }
