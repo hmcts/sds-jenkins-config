@@ -42,7 +42,8 @@
     {"type": "azurerm_data_protection_backup_instance_blob_storage"},
     {"type": "azurerm_service_plan"},
     {"type": "azurerm_windows_function_app"},
-    {"type": "azurerm_linux_function_app"}
+    {"type": "azurerm_linux_function_app"},
+    {"type": "azurerm_function_app_function"}
   ],
   
   "module_calls": [
