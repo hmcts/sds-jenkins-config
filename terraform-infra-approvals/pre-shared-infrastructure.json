@@ -46,7 +46,7 @@
   {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-vm-module.git?ref=master"},
-  {"source":  "./modules/backup_vault"},
-  {"source":  "./modules/function_app"}
+  {"source":  "./modules/backup_vault/?ref=preview"},
+  {"source":  "./modules/function_app/?ref=preview"}
 ]
 }
