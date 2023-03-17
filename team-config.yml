@@ -144,7 +144,7 @@ makeaplea:
     application: makeaplea
 darts:
   team: "Darts Modernisation"
-  namespace: "darts"
+  namespace: "darts-modernisation"
   slack:
     contact_channel: "#darts-devs"
     build_notices_channel: "#darts-builds"
