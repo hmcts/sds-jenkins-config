@@ -43,7 +43,8 @@
     {"type": "azurerm_service_plan"},
     {"type": "azurerm_windows_function_app"},
     {"type": "azurerm_linux_function_app"},
-    {"type": "azurerm_function_app_function"}
+    {"type": "azurerm_private_link_service"},
+    {"type": "azurerm_lb"}
   ],
   
   "module_calls": [
