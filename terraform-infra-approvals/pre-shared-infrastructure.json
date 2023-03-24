@@ -51,7 +51,7 @@
   {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-vm-module.git?ref=master"},
-  {"source":  "git@github.com:hmcts/pre-shared-infrastructure//modules/function_app?ref=preview"},
-  {"source":  "git@github.com:hmcts/pre-shared-infrastructure//modules/backup_vault?ref=preview"}
+  {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/function_app?ref=preview"},
+  {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/backup_vault?ref=preview"}
 ]
 }
