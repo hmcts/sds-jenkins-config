@@ -16,6 +16,7 @@ prod:
   - repo: https://github.com/hmcts/c100-shared-infrastructure.git
   - repo: https://github.com/hmcts/c100-application.git
   - repo: https://github.com/hmcts/makeaplea-shared-infrastructure.git
-  - repo: https://github.com/hmcts/darts-api
-  - repo: https://github.com/hmcts/darts-portal
-  
+  - repo: https://github.com/hmcts/darts-api.git
+  - repo: https://github.com/hmcts/darts-portal.git
+  - repo: https://github.com/hmcts/darts-gateway.git
+
