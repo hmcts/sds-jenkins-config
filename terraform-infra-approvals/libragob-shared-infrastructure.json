@@ -31,6 +31,7 @@
     {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=db-collation"},
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=thomast1906-patch-1"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=aad-groups-read-admin"},
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"}
   ]
