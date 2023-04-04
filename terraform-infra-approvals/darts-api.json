@@ -1,7 +1,10 @@
 {
     "resources": [
-        {"type": "postgresql_role"},
-        {"type": "postgresql_grant"}
+        {"type": "azurerm"},
+        {"type": "azurerm_postgresql_flexible_server"},
+        {"type": "azurerm_postgresql_flexible_server_database"},
+        {"type": "azurerm_postgresql_flexible_server_active_directory_administrator"},
+        {"type": "azurerm_postgresql_flexible_server_firewall_rule"}
     ],
     "module_calls": []
 }
