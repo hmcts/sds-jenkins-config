@@ -1,0 +1,6 @@
+{
+  "resources": [
+    {"type": "azuread_application_password"}
+  ],
+  "module_calls": []
+}
