@@ -1,10 +1,6 @@
 {
-    "resources": [
-        {"type": "azurerm"},
-        {"type": "azurerm_postgresql_flexible_server"},
-        {"type": "azurerm_postgresql_flexible_server_database"},
-        {"type": "azurerm_postgresql_flexible_server_active_directory_administrator"},
-        {"type": "azurerm_postgresql_flexible_server_firewall_rule"}
-    ],
-    "module_calls": []
+    "resources": [],
+    "module_calls": [
+        {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=master"}
+      ]
 }
