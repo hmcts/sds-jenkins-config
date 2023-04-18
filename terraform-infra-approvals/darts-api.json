@@ -1,8 +1,10 @@
 {
-    "resources": [],
+    "resources": [       
+      {"type": "postgresql_role"},
+      {"type": "postgresql_grant"}
+    ],
     "module_calls": [
       {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=master"},
-      {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=master"},
-      {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=master"}
+      {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=master"}
     ]
 }
