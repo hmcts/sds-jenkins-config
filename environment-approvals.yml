@@ -18,5 +18,5 @@ prod:
   - repo: https://github.com/hmcts/makeaplea-shared-infrastructure.git
   - repo: https://github.com/hmcts/darts-api.git
   - repo: https://github.com/hmcts/darts-portal.git
-  - repo: https://github.com/hmcts/darts-gateway.git
+  - repo: https://github.com/hmcts/darts-shared-infrastructure/tree/master
 
