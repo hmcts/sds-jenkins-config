@@ -1,6 +1,7 @@
 {
   "resources": [
-    {"type": "azuread_application_password"}
+    {"type": "azuread_application_password"},
+    {"type": "azurerm_storage_container"}
   ],
   "module_calls": []
 }
