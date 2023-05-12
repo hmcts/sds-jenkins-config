@@ -12,7 +12,9 @@
       {"type": "azurerm_subnet_route_table_association"},
       {"type": "azurerm_route_table"},
       {"type": "azurerm_lb"},
-      {"type": "azurerm_private_link_service"}
+      {"type": "azurerm_private_link_service"},
+      {"type": "azurerm_network_security_group"},
+      {"type": "azurerm_network_security_rule"}
     ],
 
     "module_calls": [

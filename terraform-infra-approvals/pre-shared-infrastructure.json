@@ -44,7 +44,9 @@
     {"type": "azurerm_windows_function_app"},
     {"type": "azurerm_linux_function_app"},
     {"type": "azurerm_private_link_service"},
-    {"type": "azurerm_lb"}
+    {"type": "azurerm_lb"},
+    {"type": "azurerm_network_security_group"},
+    {"type": "azurerm_network_security_rule"}
   ],
   
   "module_calls": [
