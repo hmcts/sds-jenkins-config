@@ -1,6 +1,11 @@
 {
   "resources": [
-    {"type": "azuread_application_password"}
+    {"type": "azuread_application_password"},
+    {"type": "azurerm_subnet"},
+    {"type": "azurerm_managed_disk"},
+    {"type": "azurerm_virtual_network"},
+    {"type": "azurerm_network_interface"},
+    {"type": "azurerm_virtual_machine"}
   ],
   "module_calls": []
 }
