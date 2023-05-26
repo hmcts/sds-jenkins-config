@@ -72,7 +72,7 @@
       "source": "git@github.com:hmcts/oracle-azure-infrastructure-terraform-modules.git//azure-vm?ref=0.0.58"
     },
     {
-      "source": "./modules/azure-vm"
+      "source": "./modules/azure-vm?ref=master"
     },
     {
       "source": "git@github.com:hmcts/terraform-module-vm-bootstrap?ref=master"
