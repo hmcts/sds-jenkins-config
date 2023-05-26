@@ -8,5 +8,7 @@
     {"type": "azurerm_virtual_machine"},
     {"type": "random_password"}
   ],
-  "module_calls": []
+  "module_calls": [
+    {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"}
+  ]
 }
