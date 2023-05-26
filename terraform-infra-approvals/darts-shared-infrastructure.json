@@ -5,7 +5,8 @@
     {"type": "azurerm_managed_disk"},
     {"type": "azurerm_virtual_network"},
     {"type": "azurerm_network_interface"},
-    {"type": "azurerm_virtual_machine"}
+    {"type": "azurerm_virtual_machine"},
+    {"type": "random_password"}
   ],
   "module_calls": []
 }
