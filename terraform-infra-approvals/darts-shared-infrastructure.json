@@ -7,7 +7,8 @@
     {"type": "azurerm_network_interface"},
     {"type": "azurerm_virtual_machine"},
     {"type": "random_password"},
-    {"type": "azurerm_linux_virtual_machine"}
+    {"type": "azurerm_linux_virtual_machine"},
+    {"type": "azurerm_virtual_machine_data_disk_attachment"}
   ],
   "module_calls": []
 }
