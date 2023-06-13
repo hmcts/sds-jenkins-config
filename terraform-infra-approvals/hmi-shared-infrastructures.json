@@ -1,6 +1,9 @@
 {
-  "resources": [],
+  "resources": [
+    {"type": "azurerm_automation_account"}
+  ],
   "module_calls": [
-    {"source":  "./modules/kv_secrets?ref=master"}
+    {"source":  "./modules/kv_secrets?ref=master"},
+    {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-sas-token-renewal?ref=master"}
   ]
 }
