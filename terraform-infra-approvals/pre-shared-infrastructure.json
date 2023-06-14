@@ -58,6 +58,7 @@
   {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/function_app?ref=preview"},
   {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/backup_vault?ref=preview"},
   {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"},
-  {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=restore_policy"}
+  {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=restore_policy"},
+  {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=private_endpoint"}
 ]
 }
