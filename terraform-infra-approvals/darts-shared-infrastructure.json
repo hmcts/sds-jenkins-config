@@ -8,6 +8,9 @@
     {"type": "azurerm_virtual_machine"},
     {"type": "random_password"},
     {"type": "azurerm_linux_virtual_machine"},
+    {"type": "azurerm_virtual_network_peering"},
+    {"type": "azurerm_route_table"},
+    {"type": "azurerm_route"},
     {"type": "azurerm_virtual_machine_data_disk_attachment"}
   ],
   "module_calls": [
