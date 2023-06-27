@@ -10,7 +10,8 @@
       {"type": "azurerm_recovery_services_vault"},
       {"type": "azurerm_backup_container_storage_account"},
       {"type": "azurerm_snapshot"},
-      {"type": "azurerm_data_protection_backup_vault"}
+      {"type": "azurerm_data_protection_backup_vault"},
+      {"type": "azuread_application_password"}
     ],
     
     "module_calls": [
