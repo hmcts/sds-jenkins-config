@@ -1,6 +1,7 @@
 {
   "resources": [
-    {"type": "azurerm_automation_account"}
+    {"type": "azurerm_automation_account"},
+    {"type": "azurerm_role_assignment"}
   ],
   "module_calls": [
     {"source":  "./modules/kv_secrets?ref=master"},
