@@ -13,6 +13,7 @@
     {"type": "azurerm_route"},
     {"type": "azurerm_subnet_route_table_association"},
     {"type": "azurerm_virtual_machine_extension"},
+    {"type": "azurerm_role_assignment"},
     {"type": "azurerm_virtual_machine_data_disk_attachment"}
   ],
   "module_calls": [
