@@ -16,6 +16,7 @@
     {"type": "azurerm_role_assignment"},
     {"type": "azurerm_windows_virtual_machine"},
     {"type": "azurerm_firewall"},
+    {"type": "azurerm_public_ip"},
     {"type": "azurerm_virtual_machine_data_disk_attachment"}
   ],
   "module_calls": [
