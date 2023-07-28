@@ -19,7 +19,8 @@
     {"type": "azurerm_firewall_policy"},
     {"type": "azurerm_firewall_policy_rule_collection_group"},
     {"type": "azurerm_public_ip"},
-    {"type": "azurerm_virtual_machine_data_disk_attachment"}
+    {"type": "azurerm_virtual_machine_data_disk_attachment"},
+    {"type": "azurerm_log_analytics_workspace"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"}
