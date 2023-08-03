@@ -1,0 +1,13 @@
+{
+    "resources": [
+      {"type": "azurerm_service_plan"},
+      {"type": "azurerm_windows_function_app"},
+      {"type": "azurerm_linux_function_app"}
+
+    ],
+    
+    "module_calls": [
+    {"source":  "git@github.com:hmcts/pre-functions.git//modules/function_app?ref=preview"}
+  ]
+  }
+  
