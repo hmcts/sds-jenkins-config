@@ -15,6 +15,7 @@ prod:
   - repo: https://github.com/hmcts/pre-shared-infrastructure.git
   - repo: https://github.com/hmcts/pre-network.git
   - repo: https://github.com/hmcts/pre-vault.git
+  - repo: https://github.com/hmcts/pre-functions.git
   - repo: https://github.com/hmcts/c100-shared-infrastructure.git
   - repo: https://github.com/hmcts/c100-application.git
   - repo: https://github.com/hmcts/makeaplea-shared-infrastructure.git
