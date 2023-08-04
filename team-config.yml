@@ -1,6 +1,7 @@
 toffee:
   team: "Platform Operations"
   namespace: "toffee"
+  agent: "arm"
   slack:
     contact_channel: "#platops-help"
     build_notices_channel: "#platops-build-notices"
@@ -17,7 +18,7 @@ toffee-shared-infrastructure:
 apple:
   team: "Platform Operations"
   namespace: "toffee"
-  agent: arm
+  agent: "arm"
   slack:
     contact_channel: "#platops-help"
     build_notices_channel: "#platops-build-notices"
