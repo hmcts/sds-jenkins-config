@@ -24,4 +24,5 @@ prod:
   - repo: https://github.com/hmcts/darts-gateway.git
   - repo: https://github.com/hmcts/darts-shared-infrastructure.git
   - repo: https://github.com/hmcts/darts-automation.git
+  - repo: https://github.com/hmcts/darts-stub-services.git
   - repo: https://github.com/hmcts/pdda-shared-infrastructure.git
