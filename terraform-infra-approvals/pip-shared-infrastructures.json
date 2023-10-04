@@ -4,7 +4,8 @@
     {"type": "azuread_application_password"},
     {"type": "azurerm_automation_account"},
     {"type": "azurerm_api_management_subscription"},
-    {"type": "azurerm_federated_identity_credential"}
+    {"type": "azurerm_federated_identity_credential"},
+    {"type": "azurerm_role_assignment"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-app-recycle?ref=master"},
