@@ -47,9 +47,9 @@
     {"type": "azurerm_lb"},
     {"type": "azurerm_network_security_group"},
     {"type": "azurerm_network_security_rule"},
-    {"type": "azuread_application_password"},
     {"type": "azurerm_media_content_key_policy"},
-    {"type": "time_rotating"}
+    {"type": "azurerm_media_services_account_filter"},
+    {"type": "azurerm_eventgrid_event_subscription"}
   ],
   
   "module_calls": [
