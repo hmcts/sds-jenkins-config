@@ -160,3 +160,11 @@ juror:
     build_notices_channel: "#juror-build-notices"
   tags:
     application: juror    
+opal:
+  team: "Green on Black"
+  namespace: "opal"
+  slack:
+    contact_channel: "#opal-help"
+    build_notices_channel: "#opal-builds"
+  tags:
+    application: opal
