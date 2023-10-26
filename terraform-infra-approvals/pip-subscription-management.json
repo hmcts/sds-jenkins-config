@@ -4,6 +4,6 @@
         {"type": "postgresql_grant"}
     ],
     "module_calls": [
-        {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=fix-aad-grant"},
+        {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=fix-aad-grant"}
     ]
 }
