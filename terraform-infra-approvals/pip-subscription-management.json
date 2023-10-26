@@ -3,5 +3,7 @@
         {"type": "postgresql_role"},
         {"type": "postgresql_grant"}
     ],
-    "module_calls": []
+    "module_calls": [
+        {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=fix-aad-grant"},
+    ]
 }
