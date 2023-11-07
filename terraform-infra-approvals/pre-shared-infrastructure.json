@@ -50,7 +50,8 @@
     {"type": "azurerm_media_content_key_policy"},
     {"type": "azurerm_media_services_account_filter"},
     {"type": "azurerm_eventgrid_event_subscription"},
-    {"type": "azurerm_eventgrid_topic"}
+    {"type": "azurerm_eventgrid_topic"},
+    {"type": "azurerm_postgresql_flexible_server_configuration"}
   ],
   
   "module_calls": [
@@ -64,7 +65,5 @@
   {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/function_app?ref=preview"},
   {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/backup_vault?ref=preview"},
   {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"},
-  {"source":  "git@github.com:hmcts/cnp-module-action-group?ref=master"},
-  {"source":  "git@github.com:hmcts/cnp-module-metric-alert?ref=master"}
 ]
 }
