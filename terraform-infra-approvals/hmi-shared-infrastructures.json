@@ -2,7 +2,8 @@
   "resources": [
     {"type": "azurerm_automation_account"},
     {"type": "azurerm_role_assignment"},
-    {"type": "azurerm_key_vault_certificate"}
+    {"type": "azurerm_key_vault_certificate"},
+    {"type": "azurerm_user_assigned_identity"}
   ],
   "module_calls": [
     {"source":  "./modules/kv_secrets?ref=master"},
