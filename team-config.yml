@@ -185,4 +185,4 @@ pdm:
     contact_channel: "#pdm"
     build_notices_channel: "#pdm-builds"
   tags:
-    application: pdm
+    application: public-display-manager
