@@ -176,7 +176,7 @@ pdda:
     contact_channel: "#pdda"
     build_notices_channel: "#pdda-builds"
   tags:
-    application: pdda
+    application: public-display-data-aggregator
 pdm:
   team: "PDM"
   namespace: "pdm"
