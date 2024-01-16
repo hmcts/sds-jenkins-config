@@ -54,17 +54,18 @@
   ],
   
   "module_calls": [
-  {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
-  {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=postgres-vnet-provider"},
-  {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap.git?ref=master"},
-  {"source":  "git@github.com:hmcts/terraform-vm-module.git?ref=master"},
-  {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"},
-  {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=DTSPO-14774-Before-change"},
-  {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=ADE-Support"},
-  {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/function_app?ref=preview"},
-  {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/backup_vault?ref=remove_vaults"},
-  {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"},
-  {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=restore_policy"},
-  {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=private_endpoint"}
-]
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=postgres-vnet-provider"},
+    {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap.git?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-vm-module.git?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=DTSPO-14774-Before-change"},
+    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=ADE-Support"},
+    {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/function_app?ref=preview"},
+    {"source":  "git@github.com:hmcts/pre-shared-infrastructure.git//modules/backup_vault?ref=remove_vaults"},
+    {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"},
+    {"source":  "git@github.com:hmcts/cnp-module-api-mgmt-subscription?ref=master"},
+    {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=restore_policy"},
+    {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=private_endpoint"}
+  ]
 }
