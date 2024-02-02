@@ -4,6 +4,7 @@ toffee:
   agent: "arm"
   slack:
     contact_channel: "#platops-help"
+    channel_id: "C8SR5CAMU"
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
@@ -12,6 +13,7 @@ toffee-shared-infrastructure:
   namespace: "toffee"
   slack:
     contact_channel: "#platops-help"
+    channel_id: "C8SR5CAMU"
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
@@ -21,6 +23,7 @@ apple:
   agent: "arm"
   slack:
     contact_channel: "#platops-help"
+    channel_id: "C8SR5CAMU"
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
@@ -29,6 +32,7 @@ apple-shared-infrastructure:
   namespace: "toffee"
   slack:
     contact_channel: "#platops-help"
+    channel_id: "C8SR5CAMU"
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
@@ -37,6 +41,7 @@ my-time:
   namespace: "my-time"
   slack:
     contact_channel: "#my-time-tech"
+    channel_id: "C041QL04YQ3"
     build_notices_channel: "#my-time-builds"
   tags:
     application: my-time
@@ -45,6 +50,7 @@ pip:
   namespace: "pip"
   slack:
     contact_channel: "#publishing-and-information"
+    channel_id: "C023BNM6K0Q"
     build_notices_channel: "#pip-build-notices"
   tags:
     application: publishing-information-service
@@ -61,6 +67,7 @@ vh:
   namespace: "vh"
   slack:
     contact_channel: "#vh-devops"
+    channel_id: "C01DSEMVDJM"
     build_notices_channel: "#vh-builds"
   tags:
     application: video-hearings-service
@@ -69,6 +76,7 @@ pre:
   namespace: "pre"
   slack:
     contact_channel: "#dts-pre-rec-evidence-tech"
+    channel_id: "C02F3N771U7"
     build_notices_channel: "#pre-builds"
   tags:
     application: pre-recorded-evidence
@@ -85,6 +93,7 @@ tax-tribunals:
   namespace: "tt"
   slack:
     contact_channel: "#pet"
+    channel_id: "C99FPBSLC"
     build_notices_channel: "#pet-devops"
   tags:
     application: tax-tribunals
@@ -93,6 +102,7 @@ employment-tribunals:
   namespace: "et"
   slack:
     contact_channel: "#pet"
+    channel_id: "C99FPBSLC"
     build_notices_channel: "#pet-devops"
   tags:
     application: employment-tribunals
@@ -101,6 +111,7 @@ help-with-fees:
   namespace: "hwf"
   slack:
     contact_channel: "#pet"
+    channel_id: "C99FPBSLC"
     build_notices_channel: "#pet-devops"
   tags:
     application: help-with-fees
@@ -109,6 +120,7 @@ c100:
   namespace: "c100"
   slack:
     contact_channel: "#pet"
+    channel_id: "C99FPBSLC"
     build_notices_channel: "#pet-devops"
   tags:
     application: c100
@@ -117,6 +129,7 @@ keda:
   namespace: "admin"
   slack:
     contact_channel: "#platops-help"
+    channel_id: "C8SR5CAMU"
     build_notices_channel: "#platops-build-notices"
   tags:
     application: core
@@ -125,6 +138,7 @@ libragob:
   namespace: "libragob"
   slack:
     contact_channel: "#platops-help"
+    channel_id: "C8SR5CAMU"
     build_notices_channel: "#platops-build-notices"
   tags:
     application: libragob 
@@ -133,6 +147,7 @@ lgy-iac:
   namespace: "dts-legacy"
   slack:
     contact_channel: "#dts-legacy-apps-contact"
+    channel_id: "C03Q5L2ETS9"
     build_notices_channel: "#dts-legacy-apps-azure-builds"
   tags:
     application: IAC-Fees
@@ -141,6 +156,7 @@ makeaplea:
   namespace: "makeaplea"
   slack:
     contact_channel: "#pet"
+    channel_id: "C99FPBSLC"
     build_notices_channel: "#pet-devops"
   tags:
     application: makeaplea
@@ -157,6 +173,7 @@ juror:
   namespace: "juror"
   slack:
     contact_channel: "#juror-dev"
+    channel_id: "C05N11TLV4K"
     build_notices_channel: "#juror-build-notices"
   tags:
     application: juror    
@@ -165,6 +182,7 @@ opal:
   namespace: "opal"
   slack:
     contact_channel: "#opal-help"
+    channel_id: "C061Z4DJM47"
     build_notices_channel: "#opal-builds"
   tags:
     application: opal
@@ -174,6 +192,7 @@ pdda:
   azure_ad_group: DTS SDS PDDA
   slack:
     contact_channel: "#pdda"
+    channel_id: "C05JGRC47TJ"
     build_notices_channel: "#pdda-builds"
   tags:
     application: public-display-data-aggregator
@@ -183,6 +202,7 @@ pdm:
   azure_ad_group: DTS SDS PDM
   slack:
     contact_channel: "#pdm"
+    channel_id: "C069B3AF1F1"
     build_notices_channel: "#pdm-builds"
   tags:
     application: public-display-manager
