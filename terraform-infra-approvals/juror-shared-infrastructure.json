@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"type": "azurerm_virtual_machine_extension"},
     {"type": "random_password"}
   ],
   "module_calls": [
