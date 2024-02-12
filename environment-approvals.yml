@@ -40,4 +40,3 @@ prod:
   - repo: https://github.com/hmcts/juror-public.git
   - repo: https://github.com/hmcts/juror-scheduler-api.git
   - repo: https://github.com/hmcts/juror-scheduler-execution.git
-          
