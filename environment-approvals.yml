@@ -34,4 +34,9 @@ prod:
   - repo: https://github.com/hmcts/hmi-shared-infrastructures-bootstrap.git
   - repo: https://github.com/hmcts/hmi-rota-dtu.git
   - repo: https://github.com/hmcts/juror-shared-infrastructure.git
+  - repo: https://github.com/hmcts/juror-api.git
+  - repo: https://github.com/hmcts/juror-bureau.git
+  - repo: https://github.com/hmcts/juror-pnc.git
+  - repo: https://github.com/hmcts/juror-public.git
   - repo: https://github.com/hmcts/juror-scheduler-api.git
+  - repo: https://github.com/hmcts/juror-scheduler-execution.git
