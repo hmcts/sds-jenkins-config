@@ -90,7 +90,7 @@
       "source": "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"
     },
     {
-      "source": "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=fix%2Fspecify-premium-messaging-partitions"
+      "source": "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=feat%2Finline-network-rulesets"
     }
   ]
 }
