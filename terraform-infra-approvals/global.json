@@ -45,6 +45,7 @@
     {"source":  "git@github.com:hmcts/cnp-module-metric-alert?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=fix-aad-grant"},
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=feat%2Fadd-storage-tier"},
     {"source":  "git@github.com:hmcts/terraform-module-dynatrace-oneagent.git?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-automation-runbook-start-stop-vm?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"},
