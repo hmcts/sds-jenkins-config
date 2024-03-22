@@ -50,7 +50,8 @@
     {"type": "azurerm_media_content_key_policy"},
     {"type": "azurerm_media_services_account_filter"},
     {"type": "azurerm_eventgrid_event_subscription"},
-    {"type": "azurerm_eventgrid_topic"}
+    {"type": "azurerm_eventgrid_topic"},
+    {"type": "local_file"}
   ],
   
   "module_calls": [
