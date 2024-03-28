@@ -1,0 +1,10 @@
+{
+  "resources": [
+    {"type": "azurerm_lb"},
+    {"type": "azurerm_lb_backend_address_pool"},
+    {"type": "azurerm_lb_probe"},
+    {"type": "azurerm_lb_rule"}
+
+  ],
+  "module_calls": []
+}
