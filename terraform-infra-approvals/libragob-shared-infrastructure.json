@@ -65,6 +65,9 @@
     },
     {
       "type": "azurerm_postgresql_flexible_server_active_directory_administrator"
+    },
+    {
+      "type": "azurerm_role_assignment"
     }
   ],
   "module_calls": [
