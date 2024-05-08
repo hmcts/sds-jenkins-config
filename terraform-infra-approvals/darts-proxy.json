@@ -18,7 +18,7 @@
   ],
   "module_calls": [
     {
-      "source": "git@github.com:hmcts/terraform-module-virtual-machine?ref=master"
+      "source": "git::https://github.com/hmcts/terraform-module-virtual-machine.git?ref=master"
     }
   ]
 }
