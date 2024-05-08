@@ -1,24 +1,12 @@
 {
   "resources": [
-    {
-      "type": "azurerm_lb"
-    },
-    {
-      "type": "azurerm_lb_backend_address_pool"
-    },
-    {
-      "type": "azurerm_lb_probe"
-    },
-    {
-      "type": "azurerm_lb_rule"
-    },
-    {
-      "type": "random_password"
-    }
+    {"type": "azurerm_lb"},
+    {"type": "azurerm_lb_backend_address_pool"},
+    {"type": "azurerm_lb_probe"},
+    {"type": "azurerm_lb_rule"},
+    {"type": "random_password"}
   ],
   "module_calls": [
-    {
-      "source": "git::https://github.com/hmcts/terraform-module-virtual-machine.git?ref=master"
-    }
+    {"source": "git::https://github.com/hmcts/terraform-module-virtual-machine.git?ref=master"}
   ]
 }
