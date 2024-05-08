@@ -5,7 +5,8 @@
     {"type": "azurerm_lb_probe"},
     {"type": "azurerm_lb_rule"},
     {"type": "random_password"}
-    
   ],
-  "module_calls": []
+  "module_calls": [
+    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine?ref=master"}
+  ]
 }
