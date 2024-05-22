@@ -28,6 +28,7 @@
   "module_calls": [
     {"source": "./modules/azure-vm?ref=master"},
     {"source": "git@github.com:hmcts/terraform-module-vm-bootstrap?ref=master"},
+    {"source": "git@github.com:hmcts/terraform-module-application-insights.git?ref=main"},
     {"source": "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
     {"source": "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=db-collation"},
     {"source": "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=postgres-vnet-provider"},
