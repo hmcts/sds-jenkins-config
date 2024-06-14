@@ -1,7 +1,6 @@
 toffee:
   team: "Platform Operations"
   namespace: "toffee"
-  agent: "arm"
   slack:
     contact_channel: "#platops-help"
     channel_id: "C05KAG00K1N"
@@ -20,7 +19,6 @@ toffee-shared-infrastructure:
 apple:
   team: "Platform Operations"
   namespace: "toffee"
-  agent: "arm"
   slack:
     contact_channel: "#platops-help"
     channel_id: "C8SR5CAMU"
@@ -141,7 +139,7 @@ libragob:
     channel_id: "C8SR5CAMU"
     build_notices_channel: "#platops-build-notices"
   tags:
-    application: libragob 
+    application: libragob
 lgy-iac:
   team: "DTS Legacy Apps"
   namespace: "dts-legacy"
@@ -176,7 +174,7 @@ juror:
     channel_id: "C05N11TLV4K"
     build_notices_channel: "#juror-build-notices"
   tags:
-    application: juror    
+    application: juror
 opal:
   team: "Green on Black"
   namespace: "opal"
