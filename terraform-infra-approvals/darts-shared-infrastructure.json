@@ -27,11 +27,10 @@
     {"type": "azurerm_recovery_services_vault"},
     {"type": "azurerm_backup_policy_vm"},
     {"type": "azurerm_backup_protected_vm"},
-    {"type": "azurerm_eventgrid_event_subscription"},
-    {"type": "azurerm_eventgrid_topic"},
-    {"type": "azurerm_logic_app_workflow"},
-    {"type": "azurerm_logic_app_trigger_eventgrid"}
-
+    {"type": "azurerm_service_plan"},
+    {"type": "azurerm_storage_account_network_rules"},
+    {"type": "azurerm_logic_app_standard"},
+    {"type": "azurerm_private_endpoint"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"},
