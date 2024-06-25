@@ -23,7 +23,8 @@
     {"type": "azurerm_backup_policy_vm"},
     {"type": "azurerm_servicebus_queue"},
     {"type": "azurerm_postgresql_flexible_server_active_directory_administrator"},
-    {"type": "azurerm_role_assignment"}
+    {"type": "azurerm_role_assignment"},
+    {"type": "azurerm_postgresql_flexible_server"}
   ],
   "module_calls": [
     {"source": "./modules/azure-vm?ref=master"},
