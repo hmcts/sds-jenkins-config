@@ -10,11 +10,15 @@ prod:
   - repo: https://github.com/hmcts/help-with-fees-shared-infrastructure.git
   - repo: https://github.com/hmcts/pip-account-management.git
   - repo: https://github.com/hmcts/pip-subscription-management.git
+  - repo: https://github.com/hmcts/pip-publication-services.git
   - repo: https://github.com/hmcts/libragob-shared-infrastructure.git
   - repo: https://github.com/hmcts/sds-keda-infrastructure.git
+  - repo: https://github.com/hmcts/pre-api.git
+  - repo: https://github.com/hmcts/pre-portal.git
   - repo: https://github.com/hmcts/pre-shared-infrastructure.git
   - repo: https://github.com/hmcts/pre-network.git
   - repo: https://github.com/hmcts/pre-vault.git
+  - repo: https://github.com/hmcts/pre-functions.git
   - repo: https://github.com/hmcts/c100-shared-infrastructure.git
   - repo: https://github.com/hmcts/c100-application.git
   - repo: https://github.com/hmcts/makeaplea-shared-infrastructure.git
@@ -23,4 +27,17 @@ prod:
   - repo: https://github.com/hmcts/darts-gateway.git
   - repo: https://github.com/hmcts/darts-shared-infrastructure.git
   - repo: https://github.com/hmcts/darts-automation.git
+  - repo: https://github.com/hmcts/darts-proxy.git
   - repo: https://github.com/hmcts/pdda-shared-infrastructure.git
+  - repo: https://github.com/hmcts/pdm-shared-infrastructure.git
+  - repo: https://github.com/hmcts/hmi-apim-infrastructures.git
+  - repo: https://github.com/hmcts/hmi-shared-infrastructures.git
+  - repo: https://github.com/hmcts/hmi-shared-infrastructures-bootstrap.git
+  - repo: https://github.com/hmcts/hmi-rota-dtu.git
+  - repo: https://github.com/hmcts/juror-shared-infrastructure.git
+  - repo: https://github.com/hmcts/juror-api.git
+  - repo: https://github.com/hmcts/juror-bureau.git
+  - repo: https://github.com/hmcts/juror-pnc.git
+  - repo: https://github.com/hmcts/juror-public.git
+  - repo: https://github.com/hmcts/juror-scheduler-api.git
+  - repo: https://github.com/hmcts/juror-scheduler-execution.git

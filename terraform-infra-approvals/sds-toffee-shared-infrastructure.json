@@ -3,6 +3,8 @@
     {"type": "azurerm_role_assignment"},
     {"type": "azurerm_servicebus_queue"}
   ],
-  "module_calls": []
+  "module_calls": [
+    {"source":  "git@github.com:hmcts/terraform-module-application-insights?ref=DTSPO-16829-prepare"}
+  ]
 }
 
