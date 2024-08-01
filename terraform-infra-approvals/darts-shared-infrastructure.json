@@ -30,7 +30,8 @@
     {"type": "azurerm_service_plan"},
     {"type": "azurerm_storage_account_network_rules"},
     {"type": "azurerm_logic_app_standard"},
-    {"type": "azurerm_private_endpoint"}
+    {"type": "azurerm_private_endpoint"},
+    {"type": "postgresql_extension"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"},
