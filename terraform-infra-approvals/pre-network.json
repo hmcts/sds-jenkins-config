@@ -14,7 +14,6 @@
       {"type": "azurerm_lb"},
       {"type": "azurerm_private_link_service"},
       {"type": "azurerm_network_security_group"},
-      {"type": "azurerm_private_endpoint"},
       {"type": "azurerm_network_security_rule"}
     ],
 
