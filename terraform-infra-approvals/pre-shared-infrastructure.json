@@ -19,6 +19,6 @@
   "module_calls": [
   {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"},
   {"source":  "git@github.com:hmcts/pre-backup-vault.git/?ref=master"},
-  {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"},
+  {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"}
 ]
 }
