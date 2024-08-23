@@ -22,6 +22,7 @@
   {"source":  "git@github.com:hmcts/pre-backup-vault.git/?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"},
   {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=master"},
-  {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=master"}
+  {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=master"},
+  {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=adds-public-network-access-var"}  
 ]
 }
