@@ -17,11 +17,8 @@
   ],
   
   "module_calls": [
-  {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"},
   {"source":  "git@github.com:hmcts/pre-backup-vault.git/?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"},
-  {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=master"},
-  {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=master"}
 ]
 }
