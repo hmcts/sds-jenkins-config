@@ -24,6 +24,7 @@
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-subscription?ref=4.x"},
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-topic?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=4.x"},
     {"source":  "git@github.com:hmcts/terraform-module-log-analytics-workspace-id.git?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-application-insights?ref=main"},
     {"source":  "git@github.com:hmcts/terraform-module-application-insights?ref=4.x"},
