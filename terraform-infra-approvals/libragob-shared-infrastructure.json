@@ -37,6 +37,7 @@
     {"source": "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=postgres-vnet-provider"},
     {"source": "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=aad-groups-read-admin"},
     {"source": "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=master"},
-    {"source": "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=feat%2Finline-network-rulesets"}
+    {"source": "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=feat%2Finline-network-rulesets"},
+    {"source": "git@github.com:hmcts/terraform-module-servicebus-namespace?ref=test-version4-azurerm"}
   ]
 }
