@@ -9,6 +9,7 @@
   ],
   "module_calls": [
     {"source": "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"},
-    {"source": "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=ama-extension"}
+    {"source": "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=ama-extension"},
+    {"source": "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"}
   ]
 }
