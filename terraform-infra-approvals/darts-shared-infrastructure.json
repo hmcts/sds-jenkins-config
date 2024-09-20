@@ -38,6 +38,6 @@
     {"source":  "git@github.com:hmcts/cnp-module-key-vault?ref=fix%2Fremove-diagnostic-retention"},
     {"source":  "git@github.com:hmcts/cnp-module-redis?ref=fix%2Fadd-null-default"},
     {"source":  "git@github.com:hmcts/terraform-module-azure-datafactory?ref=main"},
-    {"source":  "git@github.com/hmcts/terraform-module-vm-bootstrap.git?ref=ieuanb74-patch-1"}
+    {"source":  "git@github.com:hmcts/terraform-module-vm-bootstrap?ref=ieuanb74-patch-1"}
   ]
 }
