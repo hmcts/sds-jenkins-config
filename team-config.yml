@@ -204,3 +204,12 @@ pdm:
     build_notices_channel: "#pdm-builds"
   tags:
     application: public-display-manager
+mrd:
+  team: "MRD"
+  namespace: "mrd"
+  slack:
+    contact_channel: "#mrd"
+    channel_id: "C07RS6WRQ4E"
+    build_notices_channel: "#mrd-builds"
+  tags:
+    application: master-reference-data
