@@ -31,7 +31,9 @@
     {"type": "azurerm_storage_account_network_rules"},
     {"type": "azurerm_logic_app_standard"},
     {"type": "azurerm_private_endpoint"},
-    {"type": "azurerm_monitor_diagnostic_setting"}
+    {"type": "azurerm_monitor_diagnostic_setting"},
+    {"type": "azurerm_storage_share"}
+    
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"},
