@@ -2,7 +2,8 @@
   "resources": [
     {"type": "azurerm_api_management_api_diagnostic"},
     {"type": "azurerm_role_assignment"},
-    {"type": "azurerm_api_management_certificate"}
+    {"type": "azurerm_api_management_certificate"},
+    {"type": "azurerm_api_management_policy_fragment"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-apim-api?ref=master"}
