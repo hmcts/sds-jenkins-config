@@ -43,6 +43,7 @@
     {"source":  "git@github.com:hmcts/cnp-module-storage-account?ref=fix/defender-azapi"},
     {"source":  "git@github.com:hmcts/cnp-module-storage?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-redis?ref=master"},
+    {"source":  "git@github.com:hmcts/cnp-module-redis?ref=4.x"},
     {"source":  "git@github.com:hmcts/cnp-module-postgres?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-postgres?ref=postgresql_tf"},
     {"source":  "git@github.com:hmcts/cnp-module-postgres?ref=pet-disable-dns-setting"},
