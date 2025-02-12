@@ -233,3 +233,12 @@ mrd:
     build_notices_channel: "#mrd-builds"
   tags:
     application: master-reference-data
+snl-automation:
+  team: "SNL Automation"
+  namespace: "snl-automation"
+  slack:
+    contact_channel: "#list-assist-qa-builds"
+    channel_id: "C08CB8KP9N3"
+    build_notices_channel: "#list-assist-qa-builds"
+  tags:
+    application: snl-automation-tests
