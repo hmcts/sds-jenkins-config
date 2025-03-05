@@ -20,7 +20,7 @@
   "module_calls": [
   {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=output-vm-mi-oid"},
-  {"source":  "git@github.com:hmcts/terraform-module-azure-datafactory.git?ref=master"},
+  {"source":  "git@github.com:hmcts/terraform-module-azure-datafactory.git?ref=main"},
   {"source":  "git@github.com:hmcts/pre-backup-vault.git/?ref=master"},
   {"source":  "git@github.com:hmcts/terraform-module-vnet-peering.git?ref=master"}
 ]
