@@ -242,7 +242,7 @@ snl-automation:
     build_notices_channel: "#list-assist-qa-builds"
   tags:
     application: snl-automation-tests
-scp-rm:
+sct-rm:
   team: "DTS SCT Resource Management"
   namespace: "sct-rm"
   slack:
