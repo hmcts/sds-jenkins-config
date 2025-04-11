@@ -1,5 +1,7 @@
 {
-  "resources": [],
+  "resources": [
+    {"type": "azurerm_postgresql_flexible_server"}
+  ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=postgres-vnet-provider"}
   ]
