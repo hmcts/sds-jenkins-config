@@ -204,6 +204,15 @@ opal:
     build_notices_channel: "#opal-builds"
   tags:
     application: opal
+courtfines:
+  team: "Court Fines"
+  namespace: "courtfines"
+  slack:
+    contact_channel: "#court-fines-help"
+    channel_id: "C08N5BVC7M5"
+    build_notices_channel: "#court-fines-builds"
+  tags:
+    application: court-fines
 pdda:
   team: "PDDA"
   namespace: "pdda"
