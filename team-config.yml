@@ -260,7 +260,7 @@ sct-rm:
     build_notices_channel: "#sct-resource-management"
   tags:
     application: sct-rm
-sds-platform:
+beetroot:
   team: "Platform Operations"
   namespace: "toffee"
   slack:
