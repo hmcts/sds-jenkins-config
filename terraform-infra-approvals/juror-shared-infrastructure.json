@@ -1,10 +1,12 @@
 {
   "resources": [
     {"type": "azurerm_virtual_machine_extension"},
-    {"type": "random_password"}
+    {"type": "random_password"},
+    {"type": "azurerm_monitor_diagnostic_setting"}
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"},
-    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=feat%2Fsupport-image-id"}
+    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=feat%2Fsupport-image-id"},
+    {"source":  "git@github.com:hmcts/terraform-module-log-analytics-workspace-id.git?ref=master"}
   ]
 }
