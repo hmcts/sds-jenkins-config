@@ -213,6 +213,15 @@ courtfines:
     build_notices_channel: "#court-fines-builds"
   tags:
     application: court-fines
+appreg:
+  team: "Applications Register"
+  namespace: "appreg"
+  slack:
+    contact_channel: "#appreg-help"
+    channel_id: "C0946UM96P5"
+    build_notices_channel: "#appreg-builds"
+  tags:
+    application: appreg
 pdda:
   team: "PDDA"
   namespace: "pdda"
