@@ -286,7 +286,7 @@ rota:
     build_notices_channel: "#rota-builds"
   tags:
     application: rota
-dcs:
+dcs-automation:
   team: "DCS Automation"
   namespace: "dcs-automation"
   slack:
