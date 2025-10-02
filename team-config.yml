@@ -286,3 +286,11 @@ rota:
     build_notices_channel: "#rota-builds"
   tags:
     application: rota
+dcs:
+  team: "DCS Automation"
+  namespace: "dcs-automation"
+  slack:
+    contact_channel: "#dcs-automation"
+    build_notices_channel: "#dcs-automation"
+  tags:
+    application: dcs-automation-tests
