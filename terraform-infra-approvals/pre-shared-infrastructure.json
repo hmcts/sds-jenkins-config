@@ -16,7 +16,8 @@
     {"type": "azurerm_storage_management_policy"},
     {"type": "azurerm_media_content_key_policy"},
     {"type": "terraform_data"},
-    {"type": "azurerm_public_ip"}
+    {"type": "azurerm_public_ip"},
+    {"type": "azuread_service_principal_delegated_permission_grant"}
   ],
   
   "module_calls": [
