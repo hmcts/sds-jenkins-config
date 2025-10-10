@@ -10,7 +10,7 @@
     {"type": "azurerm_storage_management_policy"},
     {"type": "terraform_data"},
     {"type": "azuread_application_password"},
-    {"type": "azuread_service_principal_app_role_assignment"}
+    {"type": "azuread_app_role_assignment"}
   ],
   
   "module_calls": [
