@@ -38,6 +38,7 @@ prod:
   - repo: https://github.com/hmcts/juror-shared-infrastructure.git
   - repo: https://github.com/hmcts/juror-api.git
   - repo: https://github.com/hmcts/juror-bureau.git
+  - repo: https://github.com/hmcts/juror-er-portal.git
   - repo: https://github.com/hmcts/juror-pnc.git
   - repo: https://github.com/hmcts/juror-public.git
   - repo: https://github.com/hmcts/juror-scheduler-api.git
