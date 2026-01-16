@@ -48,3 +48,4 @@ prod:
   - repo: https://github.com/hmcts/recipes-backend.git
   - repo: https://github.com/hmcts/sct-resource-management-infrastructure.git
   - repo: https://github.com/hmcts/appreg-shared-infrastructure.git
+  - repo: https://github.com/hmcts/courtfines-app.git
