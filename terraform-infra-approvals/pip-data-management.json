@@ -2,7 +2,8 @@
     "resources": [
         {"type": "azurerm_api_management_api_diagnostic"},
         {"type": "postgresql_role"},
-        {"type": "postgresql_grant"}
+        {"type": "postgresql_grant"},
+        {"type": "azurerm_api_management_logger"}
     ],
     "module_calls": []
 }
