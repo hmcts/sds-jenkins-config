@@ -1,0 +1,4 @@
+{
+  "resources": [
+    {"type": "azurerm_role_assignment"},
+}
