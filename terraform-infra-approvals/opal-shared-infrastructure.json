@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"type": "azurerm_virtual_machine_extension"},
     {"type": "azurerm_storage_account"},
     {"type": "azurerm_storage_container"},
     {"type": "azurerm_storage_account_local_user"},
@@ -7,5 +8,6 @@
     {"type": "random_password"}
   ],
   "module_calls": [
+    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"}
   ]
 }
