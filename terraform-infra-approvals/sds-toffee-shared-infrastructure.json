@@ -4,7 +4,8 @@
     {"type": "azurerm_servicebus_queue"}
   ],
   "module_calls": [
-    {"source":  "git@github.com:hmcts/terraform-module-application-insights?ref=DTSPO-16829-prepare"}
+    {"source":  "git@github.com:hmcts/terraform-module-application-insights?ref=DTSPO-16829-prepare"},
+    {"source":  "git@github.com:hmcts/terraform-module-ai-services?ref=DTSPO-30612/optional-networking"}
   ]
 }
 
