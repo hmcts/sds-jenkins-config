@@ -1,0 +1,195 @@
+repositories:
+  - repo: https://github.com/hmcts/appreg-api.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/appreg-frontend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/appreg-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/beetroot-testing-sbox.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/c100-application.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/c100-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/courtfines-app.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-api.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-automation-playwright.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-e2e-tests.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-external-component-test-harness.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-gateway.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-performance.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-portal.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-proxy.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/darts-stub-services.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/dcs-e2e-tests.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/dcs-test-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/employment-tribunals-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/help-with-fees-shared-infrastructure-sds.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/hmi-apim-infrastructures.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/hmi-rota-dtu.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/hmi-shared-infrastructures.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/hmi-shared-infrastructures-bootstrap.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-api.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-automation-tests.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-bureau.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-er-portal.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-performance-testing.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-pnc.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-public.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-scheduler-api.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-scheduler-execution.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/juror-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/lgy-iac-web.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/libragob-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/list-assist-e2e-tests.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/makeaplea-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/master-reference-data-ingestion.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/mirrorgateway-application.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/mrd-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/mrd-test-data-generator.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/my-time-api.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/my-time-frontend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/my-time-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-common-lib.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-external-api.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-file-handler.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-fines-service.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-frontend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-legacy-db-stub.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-log-audit-service.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-logging-service.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-logging-service-integration-lib.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-maintenance-service.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-rm-frontend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-service-auth-provider-app.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-user-service.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pdda-interfaces.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pdda-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pdm-interfaces.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-account-management.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-apim-publication.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-b2c-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-business-rules.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-channel-management.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-cron-trigger.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-data-management.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-data-management-apim.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-data-models.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-frontend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-publication-services.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-shared-infrastructure-bootstap.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-shared-infrastructures.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pip-subscription-management.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-api.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-e2e-tests.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-functions.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-network.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-portal.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-si2.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/pre-vault.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/recipes-backend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/recipes-frontend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/recipes-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/sct-resource-management-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/sds-keda-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/sds-toffee-frontend.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/sds-toffee-recipes-service.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/sds-toffee-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/snl-test-shared-infrastructure.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/tax-tribunals-shared-infrastructure-sds.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/vh-infra-core.git
+    deployment-enabled: true
+  - repo: https://github.com/hmcts/zephyr-automation.git
+    deployment-enabled: true
