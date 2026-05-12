@@ -1,0 +1,66 @@
+name: Remove archived repos from deployment controls
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'  # Every Monday at 08:00 UK time (07:00 UTC during BST)
+  workflow_dispatch:
+
+jobs:
+  remove-archived-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub App token
+        uses: actions/create-github-app-token@v1
+        id: app-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Find and remove archived repos from deployment-controls.yml
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          set -e
+
+          echo "Fetching archived repos with CFT Jenkins topics..."
+          gh search repos --owner hmcts --topic jenkins-cft-a-c --limit 200 --json fullName,isArchived \
+            --jq '.[] | select(.isArchived == true) | .fullName' > /tmp/archived.txt
+          gh search repos --owner hmcts --topic jenkins-cft-d-i --limit 200 --json fullName,isArchived \
+            --jq '.[] | select(.isArchived == true) | .fullName' >> /tmp/archived.txt
+          gh search repos --owner hmcts --topic jenkins-cft-j-z --limit 200 --json fullName,isArchived \
+            --jq '.[] | select(.isArchived == true) | .fullName' >> /tmp/archived.txt
+
+          sort -u /tmp/archived.txt > /tmp/archived-unique.txt
+          echo "Found $(wc -l < /tmp/archived-unique.txt) archived repos"
+
+          REMOVED=0
+          while IFS= read -r repo; do
+            repo_url="https://github.com/${repo}.git"
+            if grep -qF "${repo_url}" deployment-controls.yml; then
+              echo "Removing: ${repo_url}"
+              grep -n "${repo_url}" deployment-controls.yml | cut -d: -f1 | while read -r line_num; do
+                sed -i "${line_num},$((line_num + 1))d" deployment-controls.yml
+              done
+              REMOVED=$((REMOVED + 1))
+            fi
+          done < /tmp/archived-unique.txt
+
+          echo "Removed ${REMOVED} archived repo(s) from deployment-controls.yml"
+          echo "REMOVED=${REMOVED}" >> "$GITHUB_ENV"
+
+      - name: Commit to master
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        continue-on-error: true
+        run: |
+          git config user.name hmcts-platform-operations
+          git config user.email github-platform-operations@hmcts.net
+          git add deployment-controls.yml
+          git commit -m "chore: remove archived repos from deployment-controls.yml"
+          git push
