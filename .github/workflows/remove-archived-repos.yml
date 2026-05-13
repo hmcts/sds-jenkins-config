@@ -28,13 +28,9 @@ jobs:
         run: |
           set -e
 
-          echo "Fetching archived repos with CFT Jenkins topics..."
-          gh search repos --owner hmcts --topic jenkins-cft-a-c --limit 200 --json fullName,isArchived \
+          echo "Fetching archived repos with SDS Jenkins topic..."
+          gh search repos --owner hmcts --topic jenkins-sds --limit 200 --json fullName,isArchived \
             --jq '.[] | select(.isArchived == true) | .fullName' > /tmp/archived.txt
-          gh search repos --owner hmcts --topic jenkins-cft-d-i --limit 200 --json fullName,isArchived \
-            --jq '.[] | select(.isArchived == true) | .fullName' >> /tmp/archived.txt
-          gh search repos --owner hmcts --topic jenkins-cft-j-z --limit 200 --json fullName,isArchived \
-            --jq '.[] | select(.isArchived == true) | .fullName' >> /tmp/archived.txt
 
           sort -u /tmp/archived.txt > /tmp/archived-unique.txt
           echo "Found $(wc -l < /tmp/archived-unique.txt) archived repos"
@@ -59,8 +55,12 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         continue-on-error: true
         run: |
-          git config user.name hmcts-platform-operations
-          git config user.email github-platform-operations@hmcts.net
-          git add deployment-controls.yml
-          git commit -m "chore: remove archived repos from deployment-controls.yml"
-          git push
+          if [ "$REMOVED" -gt 0 ]; then
+            git config user.name hmcts-platform-operations
+            git config user.email github-platform-operations@hmcts.net
+            git add deployment-controls.yml
+            git commit -m "chore: remove archived repos from deployment-controls.yml"
+            git push
+          else
+            echo "No archived repos to remove - skipping commit"
+          fi
