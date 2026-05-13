@@ -22,7 +22,7 @@ jobs:
           fetch-depth: '0'
           token: ${{ steps.app-token.outputs.token }}
 
-      - name: Find and remove archived repos from deployment-controls.yml
+      - name: Find and remove archived repos from terraform infra approvals
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
@@ -41,17 +41,22 @@ jobs:
 
           REMOVED=0
           while IFS= read -r repo; do
-            repo_url="https://github.com/${repo}.git"
-            if grep -qF "${repo_url}" deployment-controls.yml; then
+            repo_url="git@github.com:${repo}.git"
+            if grep -rF "${repo_url}" terraform-infra-approvals/ >/dev/null; then
               echo "Removing: ${repo_url}"
-              grep -n "${repo_url}" deployment-controls.yml | cut -d: -f1 | while read -r line_num; do
-                sed -i "${line_num},$((line_num + 1))d" deployment-controls.yml
+              # Find and update JSON files containing the archived repo
+              for file in $(grep -rlF "${repo_url}" terraform-infra-approvals/); do
+                # Use jq to remove the module_call entry containing the archived repo
+                jq --arg url "${repo_url}" '
+                  .module_calls |= map(select(.source != $url))
+                ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
+                echo "Updated: $file"
               done
               REMOVED=$((REMOVED + 1))
             fi
           done < /tmp/archived-unique.txt
 
-          echo "Removed ${REMOVED} archived repo(s) from deployment-controls.yml"
+          echo "Removed ${REMOVED} archived repo(s) from terraform infra approvals"
           echo "REMOVED=${REMOVED}" >> "$GITHUB_ENV"
 
       - name: Commit to master
@@ -61,6 +66,6 @@ jobs:
         run: |
           git config user.name hmcts-platform-operations
           git config user.email github-platform-operations@hmcts.net
-          git add deployment-controls.yml
-          git commit -m "chore: remove archived repos from deployment-controls.yml"
+          git add terraform-infra-approvals/
+          git commit -m "chore: remove archived repos from terraform infra approvals"
           git push
