@@ -7,8 +7,6 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/beetroot-testing-sbox.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/c100-application.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/c100-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/courtfines-app.git
@@ -37,13 +35,9 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/dcs-test-shared-infrastructure.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/employment-tribunals-shared-infrastructure.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/help-with-fees-shared-infrastructure-sds.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/hmi-apim-infrastructures.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/hmi-rota-dtu.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/hmi-shared-infrastructures.git
     deployment-enabled: true
@@ -69,8 +63,6 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/juror-shared-infrastructure.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/lgy-iac-web.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/libragob-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/list-assist-e2e-tests.git
@@ -79,17 +71,9 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/master-reference-data-ingestion.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/mirrorgateway-application.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/mrd-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/mrd-test-data-generator.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/my-time-api.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/my-time-frontend.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/my-time-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-common-lib.git
     deployment-enabled: true
@@ -127,19 +111,9 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/pip-account-management.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/pip-apim-publication.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/pip-b2c-infrastructure.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/pip-business-rules.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/pip-channel-management.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/pip-cron-trigger.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/pip-data-management.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/pip-data-management-apim.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/pip-data-models.git
     deployment-enabled: true
@@ -151,13 +125,9 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/pip-shared-infrastructures.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/pip-subscription-management.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/pre-api.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/pre-e2e-tests.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/pre-functions.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/pre-network.git
     deployment-enabled: true
@@ -186,10 +156,6 @@ repositories:
   - repo: https://github.com/hmcts/sds-toffee-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/snl-test-shared-infrastructure.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/tax-tribunals-shared-infrastructure-sds.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/vh-infra-core.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/zephyr-automation.git
     deployment-enabled: true
