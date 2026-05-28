@@ -3,22 +3,31 @@
 - [ ] commit messages are meaningful and follow good commit message guidelines
 - [ ] README and other documentation has been updated / added (if needed)
 
-Please remove this line and everything above and fill the following sections:
+Please remove this line and everything above and complete the relevant section(s) below.
 
+---
 
-### JIRA link (if applicable) ###
+## 🔧 Regular change
 
+> Complete this section for configuration changes, fixes, and general updates. Remove if not applicable.
 
+### JIRA link (if applicable)
 
-### Repository being enabled for deployment ###
+### Change description
+
+---
+
+## 🚀 New repository / enabling deployments
+
+> Complete this section **only** when adding a repository to `deployment-controls.yml`. Remove if not applicable.
+
+### Repository being enabled for deployment
 
 <!-- Link to the repository e.g. https://github.com/hmcts/my-service -->
 
+### Reviewer checklist
 
-### Change description ###
-
-<!-- Only relevant if new repository is being added to deployment-controls.yml -->
-**Reviewer checklist - verify the repository meets all of the following before approving:**
+**Verify the repository meets all of the following before approving:**
 
 - [ ] Branch Protection rule or Ruleset is enabled for main branch
 - [ ] Merging to main branch requires Pull Request to be raised
@@ -26,17 +35,3 @@ Please remove this line and everything above and fill the following sections:
 - [ ] Force push to main branch is not allowed
 - [ ] Status checks (where relevant) are required to pass before merging
 - [ ] Repository has a `SECURITY.md` file (documents vulnerability reporting, more details [here](https://hmcts.github.io/standards/practices/Public-Repositories.html#vulnerability-reporting), template is [here](https://github.com/hmcts/hmcts.github.io/blob/main/security.md))
-- [ ] Repository has successfully run the Jenkins pipeline in build-only mode prior to this request
-
-### Evidence
-
-- <!-- Link to SECURITY.md>
-- <!-- Link to build-only pipeline run>
-- <!-- Please either provide Maintainer role access to the repository to Platform Operations (@hmcts/platform-operations) or upload screenshots of branch protection rules -->
-
-**Does this PR introduce a breaking change?** (check one with "x")
-
-```
-[ ] Yes
-[ ] No
-```
