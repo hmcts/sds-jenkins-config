@@ -97,6 +97,8 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-rm-frontend.git
     deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-rm-service.git
+    deployment-enabled: true
   - repo: https://github.com/hmcts/opal-service-auth-provider-app.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-shared-infrastructure.git
