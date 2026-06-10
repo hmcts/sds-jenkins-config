@@ -59,5 +59,6 @@
     {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-application-insights?ref=unique-alert-name"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible.git?ref=master"}
+    { "source": "git@github.com:hmcts/terraform-module-azure-managed-redis?ref=main" }
   ]
 }
