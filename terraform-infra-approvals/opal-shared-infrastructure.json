@@ -1,13 +1,16 @@
 {
   "resources": [
-    {"type": "azurerm_virtual_machine_extension"},
-    {"type": "azurerm_storage_account"},
-    {"type": "azurerm_storage_container"},
-    {"type": "azurerm_storage_account_local_user"},
-    {"type": "tls_private_key"},
-    {"type": "random_password"}
+    { "type": "azurerm_virtual_machine_extension" },
+    { "type": "azurerm_storage_account" },
+    { "type": "azurerm_storage_container" },
+    { "type": "azurerm_storage_account_local_user" },
+    { "type": "tls_private_key" },
+    { "type": "random_password" },
+    { "type": "azurerm_log_analytics_workspace" }
   ],
   "module_calls": [
-    {"source":  "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"}
+    {
+      "source": "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"
+    }
   ]
 }
