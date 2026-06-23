@@ -79,7 +79,7 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-external-api.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/opal-file-handler.git
+  - repo: https://github.com/hmcts/opal-file-handler-service.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-fines-service.git
     deployment-enabled: true
