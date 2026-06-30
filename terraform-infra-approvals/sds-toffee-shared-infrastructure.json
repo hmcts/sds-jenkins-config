@@ -5,7 +5,6 @@
   ],
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-application-insights?ref=DTSPO-16829-prepare"},
-    {"source":  "git@github.com:hmcts/terraform-module-ai-services?ref=DTSPO-30612/optional-networking"},
-    {"source": "git@github.com:hmcts/cnp-module-key-vault?ref=DTSPO-31965/remove-jenkins-ptl-access"}
+    {"source":  "git@github.com:hmcts/terraform-module-ai-services?ref=DTSPO-30612/optional-networking"}
   ]
 }
