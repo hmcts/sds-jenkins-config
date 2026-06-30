@@ -53,6 +53,7 @@
     {"source":  "git@github.com:hmcts/cnp-module-app-service-plan?ref=master"},
     {"source":  "git@github.com:hmcts/cnp-module-metric-alert?ref=master"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=DTSPO-30107-additional-postgres-admins"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=fix-aad-grant"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=feat%2Fadd-storage-tier"},
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=DTSPO-30107-additional-postgres-admins"},
