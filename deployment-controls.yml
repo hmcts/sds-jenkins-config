@@ -51,8 +51,6 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/juror-er-portal.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/juror-performance-testing.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/juror-pnc.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/juror-public.git
@@ -86,8 +84,6 @@ repositories:
   - repo: https://github.com/hmcts/opal-frontend.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-legacy-db-stub.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/opal-log-audit-service.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-logging-service.git
     deployment-enabled: true
