@@ -11,6 +11,9 @@
   "module_calls": [
     {
       "source": "git@github.com:hmcts/terraform-module-virtual-machine.git?ref=master"
+    },
+    {
+      "source": "git@github.com:hmcts/cpp-module-terraform-azurerm-functionapp?ref=3d89c1287f3d8e2028f7d1ccfc87e51c66a27bd1"
     }
   ]
 }
