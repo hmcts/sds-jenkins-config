@@ -155,6 +155,8 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/sds-toffee-shared-infrastructure.git
     deployment-enabled: true
+  - repo: https://github.com/hmcts/semarchy-opal.git
+    deployment-enabled: true
   - repo: https://github.com/hmcts/snl-test-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/zephyr-automation.git
