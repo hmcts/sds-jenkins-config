@@ -7,8 +7,6 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/appreg-performance.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/beetroot-testing-sbox.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/c100-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/courtfines-app.git
