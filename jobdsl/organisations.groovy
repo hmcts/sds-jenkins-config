@@ -15,7 +15,8 @@ private boolean isSandbox() {
  * Fetches the file from GitHub directly so it works during CasC startup
  * when no build workspace is available.
  */
-Set<String> loadApprovedRepos() {
+
+ Set<String> loadApprovedRepos() {
     try {
         def yaml = new Yaml()
         def url = new URL('https://raw.githubusercontent.com/hmcts/sds-jenkins-config/master/deployment-controls.yml')
@@ -36,19 +37,39 @@ Set<String> loadApprovedRepos() {
 
 Set<String> approvedRepos = loadApprovedRepos()
 
-List<Map> orgs = [
-    [name: 'HMCTS', credentialsId: 'hmcts-jenkins-cnp', displayName: 'HMCTS', topic: 'jenkins-sds'],
+// name must match the existing folder's URL name without the _Sandbox / _Nightly_Sandbox suffix
+Map<String, Map> orgGroups = [
+    'A-C': [name: 'HMCTS_a_to_c', displayName: 'HMCTS - A to C', matches: { String r -> r ==~ /(?i)^[a-c].*/ }],
+    'D-I': [name: 'HMCTS_d_to_i', displayName: 'HMCTS - D to I', matches: { String r -> r ==~ /(?i)^[d-i].*/ }],
+    'J-Z': [name: 'HMCTS_j_to_z', displayName: 'HMCTS - J to Z', matches: { String r -> !(r ==~ /(?i)^[a-i].*/) }],
 ]
 
-orgs.each { Map org ->
-    githubOrg(org, approvedRepos).call()
+String requestedGroup = binding.variables.get('ORG_GROUP') ?: 'ALL'
+if (requestedGroup != 'ALL' && !orgGroups.containsKey(requestedGroup)) {
+    throw new IllegalArgumentException("Unknown ORG_GROUP '${requestedGroup}', expected one of ${orgGroups.keySet()} or ALL")
+}
+Collection<String> groupsToProcess = requestedGroup == 'ALL' ? orgGroups.keySet() : [requestedGroup]
+
+groupsToProcess.each { String group ->
+    Map groupDef = orgGroups[group]
+    Set<String> groupRepos = approvedRepos.findAll(groupDef.matches).toSet()
+    // An empty allowlist would make githubOrg drop the regex filter and scan the whole HMCTS org
+    if (groupRepos.isEmpty()) {
+        println("[organisations] No approved repos for group ${group}, skipping")
+        return
+    }
+    println("[organisations] Group ${group}: ${groupRepos.size()} repos")
+
+    Map org = [name: groupDef.name, displayName: groupDef.displayName, credentialsId: 'hmcts-jenkins-cnp', topic: 'jenkins-sds']
+    githubOrg(org, groupRepos).call()
     org << [nightly: true]
     if (!org.nightlyDisabled) {
-        githubOrg(org, approvedRepos).call()
+        githubOrg(org, groupRepos).call()
     }
 }
 
-if (isSandbox()) {
+// sds-toffee-* falls in J-Z
+if (isSandbox() && requestedGroup in ['ALL', 'J-Z']) {
     Map pipelineTestOrg = [
             name                           : 'Pipeline_Test',
             displayName                    : 'HMCTS - Pipeline Test',

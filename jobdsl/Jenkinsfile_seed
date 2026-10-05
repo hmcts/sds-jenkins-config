@@ -1,12 +1,10 @@
-node {
-  checkout([$class: 'GitSCM',
-    branches: [[name: 'master']],
-    userRemoteConfigs: [[
-      url: 'https://github.com/hmcts/sds-jenkins-config.git',
-      credentialsId: 'hmcts-jenkins-cnp'
-    ]]
-  ])
-  jobDsl scriptText: readFile('jobdsl/organisations.groovy'),
-         removedJobAction: 'IGNORE',
-         removedViewAction: 'IGNORE'
+// lock is outside node so waiting jobs don't hold an executor
+lock(resource: 'sds-seed-job') {
+  node {
+    checkout scm
+    jobDsl scriptText: readFile('jobdsl/organisations.groovy'),
+           additionalParameters: [ORG_GROUP: params.ORG_GROUP],
+           removedJobAction: 'IGNORE',
+           removedViewAction: 'IGNORE'
+  }
 }
