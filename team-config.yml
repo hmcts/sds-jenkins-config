@@ -294,3 +294,11 @@ dcs-automation:
     build_notices_channel: "#dcs-automation"
   tags:
     application: dcs-automation-tests
+tcoe:
+  team: "TCOE"
+  namespace: "tcoe"
+  slack:
+    contact_channel: "#tcoe-dev"
+    build_notices_channel: "#tcoe-infrastructure-builds"
+  tags:
+    application: tcoe
