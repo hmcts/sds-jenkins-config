@@ -294,7 +294,7 @@ dcs-automation:
     build_notices_channel: "#dcs-automation"
   tags:
     application: dcs-automation-tests
-dcs-automation:
+tcoe:
   team: "TCOE"
   namespace: "tcoe"
   slack:
