@@ -1,5 +1,5 @@
 {
   "module_calls": [
-    {"source":  "git@github.com:hmcts/terraform-module-data-landing-zone.git?ref=master"}
+    {"source":  "git@github.com:hmcts/terraform-module-data-landing-zone.git?ref=main"}
   ]
 }
