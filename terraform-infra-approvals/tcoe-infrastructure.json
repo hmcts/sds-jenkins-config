@@ -1,19 +1,8 @@
 {
   "resources": [
-    {"type": "azuread_application_password"},
-    {"type": "azurerm_key_vault"},
-    {"type": "azurerm_key_vault_key"},
-    {"type": "azurerm_storage_account"},
-    {"type": "azurerm_storage_data_lake_gen2_filesystem"},
-    {"type": "azurerm_storage_container"},
-    {"type": "azurerm_synapse_workspace"},
-    {"type": "azurerm_synapse_workspace_key"},
-    {"type": "azurerm_synapse_workspace_aad_admin"}
+    {"type": "azurerm_storage_data_lake_gen2_filesystem"}
   ],
   "module_calls": [
-    {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=master"},
-    {"source":  "./modules/key_vault?ref=master"},
-    {"source":  "./modules/storage_account?ref=master"},
-    {"source":  "./modules/synapse_analytics?ref=master"},
+    {"source":  "git@github.com:hmcts/terraform-module-common-tags.git?ref=feature/deploy-synapse-analytics-workspace"}
   ]
 }
