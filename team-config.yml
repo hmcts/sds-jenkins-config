@@ -299,6 +299,6 @@ tcoe:
   namespace: "tcoe"
   slack:
     contact_channel: "#tcoe-dev"
-    build_notices_channel: "#tcoe-infrastructure-builds"
+    build_notices_channel: "#tcoe-dev-infra-builds"
   tags:
     application: tcoe
