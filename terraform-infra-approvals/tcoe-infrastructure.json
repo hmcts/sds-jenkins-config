@@ -2,6 +2,8 @@
   "resources": [
     {"type": "azurerm_storage_data_lake_gen2_filesystem"},
     {"type": "azurerm_synapse_workspace"},
-    {"type": "azurerm_role_assignment"}
+    {"type": "azurerm_role_assignment"},
+    {"type": "azurerm_synapse_firewall_rule"},
+    {"type": "azurerm_synapse_role_assignment"}
   ]
 }
