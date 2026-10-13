@@ -75,6 +75,8 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-common-lib.git
     deployment-enabled: true
+  - repo: https://github.com/hmcts/opal-refdata-common-lib.git
+    deployment-enabled: true
   - repo: https://github.com/hmcts/opal-external-api.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/opal-file-handler-service.git
