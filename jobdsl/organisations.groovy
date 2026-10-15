@@ -155,7 +155,7 @@ Closure githubOrg(Map args = [:], Set<String> approvedRepos) {
             }
             configure { node ->
                 if (runningOnSandbox) {
-                    node / properties / 'jenkins.branch.NoTriggerOrganizationFolderProperty' {
+                    node / 'properties' / 'jenkins.branch.NoTriggerOrganizationFolderProperty' {
                         branches('.*')
                         strategy('INDEXING')
                     }
