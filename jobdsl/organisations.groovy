@@ -154,6 +154,13 @@ Closure githubOrg(Map args = [:], Set<String> approvedRepos) {
                 }
             }
             configure { node ->
+                if (runningOnSandbox) {
+                    node / properties / 'jenkins.branch.NoTriggerOrganizationFolderProperty' {
+                        branches('.*')
+                        strategy('INDEXING')
+                    }
+                }
+                
                 def traits = node / navigators / 'org.jenkinsci.plugins.github__branch__source.GitHubSCMNavigator' / traits
 
                 // Build a regex from the approved repos allowlist.
