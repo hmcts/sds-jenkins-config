@@ -7,8 +7,6 @@ repositories:
     deployment-enabled: true
   - repo: https://github.com/hmcts/appreg-performance.git
     deployment-enabled: true
-  - repo: https://github.com/hmcts/c100-shared-infrastructure.git
-    deployment-enabled: true
   - repo: https://github.com/hmcts/courtfines-app.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/darts-api.git
@@ -64,8 +62,6 @@ repositories:
   - repo: https://github.com/hmcts/libragob-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/list-assist-e2e-tests.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/makeaplea-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/master-reference-data-ingestion.git
     deployment-enabled: true
@@ -146,8 +142,6 @@ repositories:
   - repo: https://github.com/hmcts/recipes-shared-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/sct-resource-management-infrastructure.git
-    deployment-enabled: true
-  - repo: https://github.com/hmcts/sds-keda-infrastructure.git
     deployment-enabled: true
   - repo: https://github.com/hmcts/sds-toffee-frontend.git
     deployment-enabled: true
