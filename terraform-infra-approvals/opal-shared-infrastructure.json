@@ -6,7 +6,9 @@
     { "type": "azurerm_storage_account_local_user" },
     { "type": "tls_private_key" },
     { "type": "random_password" },
-    { "type": "azurerm_log_analytics_workspace" }
+    { "type": "azurerm_log_analytics_workspace" },
+    { "type": "azurerm_role_definition" },
+    { "type": "azurerm_role_assignment" }
   ],
   "module_calls": [
     {
