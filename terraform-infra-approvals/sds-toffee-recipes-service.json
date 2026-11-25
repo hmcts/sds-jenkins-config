@@ -5,7 +5,7 @@
   "module_calls": [
     {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=postgres-vnet-provider"},
     {"source":  "git@github.com:hmcts/cnp-module-app-service-plan?ref=DTSPO-30614-modernise-app-service-plan-module"},
-    {"source":  "git@github.com:hmcts/cnp-module-app-service-plan?ref=DTSPO-36642"}
+    {"source":  "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=DTSPO-36642"}
 
   ]
 }
